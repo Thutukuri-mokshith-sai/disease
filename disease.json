@@ -1,0 +1,2693 @@
+{
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "pathogen": "Cercospora zeae-maydis",
+        "symptoms": [
+          "Small, rectangular gray or tan lesions with dark borders on lower leaves",
+          "Lesions may coalesce to cause blight-like symptoms",
+          "Premature death of leaves reducing grain fill"
+        ],
+        "treatments": [
+          {
+            "name": "Propiconazole",
+            "brand_examples": ["Tilt", "Bumper", "Orbit"],
+            "formulation": "25% EC",
+            "dosage": "1 ml per liter",
+            "application": "Apply as foliar spray at first sign of disease",
+            "frequency": "Repeat every 10–14 days if conditions favor disease",
+            "pre_harvest_interval": "14 days"
+          }
+        ],
+        "organic_alternatives": [
+          {
+            "name": "Bacillus subtilis-based biofungicide",
+            "dosage": "As per manufacturer instructions",
+            "application": "Spray evenly over crop foliage"
+          }
+        ],
+        "prevention": [
+          "Use resistant hybrids if available",
+          "Rotate crops with non-hosts (e.g., soybean)",
+          "Plow under infected crop residues",
+          "Maintain balanced fertilization to strengthen plants"
+        ],
+        "safety_tips": [
+          "Wear protective clothing and goggles during chemical application",
+          "Avoid spraying on windy days to reduce drift"
+        ]
+      },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+  "pathogen": "Exserohilum turcicum",
+  "symptoms": [
+    "Long, elliptical gray-green or tan lesions on lower leaves",
+    "Lesions may enlarge and merge, causing large necrotic areas",
+    "Premature leaf death reducing grain yield and quality"
+  ],
+  "treatments": [
+    {
+      "name": "Azoxystrobin",
+      "brand_examples": ["Amistar", "Quadris"],
+      "formulation": "250 SC",
+      "dosage": "1–2 ml per liter",
+      "application": "Apply as foliar spray when symptoms appear",
+      "frequency": "Repeat every 10–14 days under favorable conditions",
+      "pre_harvest_interval": "21 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride formulation",
+      "dosage": "As recommended by the manufacturer",
+      "application": "Apply to soil and foliage to suppress fungal pathogens"
+    }
+  ],
+  "prevention": [
+    "Use resistant hybrids and certified seed",
+    "Practice crop rotation with non-host crops",
+    "Remove and destroy crop debris after harvest",
+    "Avoid overhead irrigation and ensure good air flow"
+  ],
+  "safety_tips": [
+    "Always wear gloves, mask, and protective clothing while spraying",
+    "Avoid spraying during high winds or near water bodies"
+  ]
+},
+"Corn_(maize)___healthy": {},
+    "Tomato___healthy": {},
+    "Raspberry___healthy": {},
+   "Strawberry___Leaf_scorch": {
+  "pathogen": "Diplocarpon earliana",
+  "symptoms": [
+    "Irregular purplish spots on upper leaf surface",
+    "Leaves may become scorched and die from edges inward",
+    "Severe infection leads to defoliation and reduced yield"
+  ],
+  "treatments": [
+    {
+      "name": "Myclobutanil",
+      "brand_examples": ["Rally", "Eagle"],
+      "formulation": "40% WP",
+      "dosage": "1 g per liter of water",
+      "application": "Apply as foliar spray at early signs of disease",
+      "frequency": "Repeat every 10–14 days during wet weather",
+      "pre_harvest_interval": "14 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Sulfur-based fungicide",
+      "dosage": "As per label recommendation",
+      "application": "Spray during early morning or evening to avoid leaf burn"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free plants",
+    "Avoid overhead irrigation",
+    "Ensure good air circulation between plants",
+    "Remove and destroy infected plant debris"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask when handling fungicides",
+    "Wash fruits thoroughly before consumption if treated"
+  ]
+},
+ "Apple___healthy": {},
+    "Grape___Black_rot": {
+  "pathogen": "Guignardia bidwellii",
+  "symptoms": [
+    "Small, circular, brown spots with dark margins on leaves",
+    "Black, shriveled, mummified berries remain attached to the vine",
+    "Lesions may also appear on shoots and tendrils"
+  ],
+  "treatments": [
+    {
+      "name": "Mancozeb",
+      "brand_examples": ["Dithane M-45", "Manzate"],
+      "formulation": "75% WP",
+      "dosage": "2–2.5 g per liter of water",
+      "application": "Spray at pre-bloom and repeat every 7–14 days",
+      "frequency": "3–4 applications during wet weather",
+      "pre_harvest_interval": "66 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Copper-based fungicide",
+      "dosage": "As per label recommendation",
+      "application": "Apply during dry weather with good coverage"
+    }
+  ],
+  "prevention": [
+    "Prune and remove infected canes and mummies",
+    "Promote air circulation through proper training and spacing",
+    "Apply preventive sprays during early growth stages"
+  ],
+  "safety_tips": [
+    "Do not apply copper sprays during very hot weather",
+    "Use goggles and gloves when spraying chemicals"
+  ]
+},
+"Apple___Apple_scab": {
+  "pathogen": "Venturia inaequalis",
+  "symptoms": [
+    "Olive-green to black velvety spots on leaves and fruit",
+    "Leaf curling and premature leaf drop",
+    "Scabby, cracked lesions on fruit affecting market quality"
+  ],
+  "treatments": [
+    {
+      "name": "Captan",
+      "brand_examples": ["Captan 50 WP", "Captaf"],
+      "formulation": "50% WP",
+      "dosage": "2 g per liter of water",
+      "application": "Spray starting at green tip stage and repeat every 7–10 days",
+      "frequency": "Multiple applications throughout growing season",
+      "pre_harvest_interval": "0 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Sulfur-based fungicide",
+      "dosage": "As per manufacturer instructions",
+      "application": "Apply preventively during early stages of leaf development"
+    }
+  ],
+  "prevention": [
+    "Remove fallen leaves and pruned branches to reduce overwintering spores",
+    "Use resistant apple cultivars if available",
+    "Ensure good air circulation through pruning and spacing"
+  ],
+  "safety_tips": [
+    "Avoid contact with skin and eyes during application",
+    "Store chemicals safely away from children and food items"
+  ]
+},
+  "Corn_(maize)___Common_rust_": {
+  "pathogen": "Puccinia sorghi",
+  "symptoms": [
+    "Small, round to oval reddish-brown pustules on both leaf surfaces",
+    "Pustules may merge and cause extensive leaf damage",
+    "In severe cases, reduced photosynthesis and stunted growth"
+  ],
+  "treatments": [
+    {
+      "name": "Tebuconazole",
+      "brand_examples": ["Folicur", "Orius", "Riza"],
+      "formulation": "25% EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Apply at first sign of disease or during favorable conditions",
+      "frequency": "Repeat every 10–14 days if needed",
+      "pre_harvest_interval": "21 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Milk Spray (10% solution)",
+      "dosage": "100 ml milk in 1 liter water",
+      "application": "Spray early morning to slow fungal growth"
+    }
+  ],
+  "prevention": [
+    "Plant resistant corn varieties if available",
+    "Rotate crops with non-host species",
+    "Destroy crop debris after harvest to reduce overwintering spores"
+  ],
+  "safety_tips": [
+    "Wear a mask and gloves while handling fungicides",
+    "Avoid spraying during strong wind to minimize drift"
+  ]
+},
+  "Peach___Bacterial_spot": {
+  "pathogen": "Xanthomonas campestris pv. pruni",
+  "symptoms": [
+    "Small, water-soaked spots on leaves that enlarge and turn purple to black",
+    "Leaf spots may fall out, giving a shot-hole appearance",
+    "Dark, sunken lesions on fruit, often leading to cracking"
+  ],
+  "treatments": [
+    {
+      "name": "Copper Oxychloride",
+      "brand_examples": ["Blitox", "Fytolan"],
+      "formulation": "50% WP",
+      "dosage": "2 - 3 g per liter of water",
+      "application": "Spray during dormant season and repeat in early growth stages",
+      "frequency": "Repeat after 10–15 days if needed",
+      "pre_harvest_interval": "21 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Bacillus subtilis-based bio-control agent",
+      "dosage": " Liquid Formulation - 1 - 2 mL per liter of water; Powder Formulation - 2 - 4 grams per liter of water.",
+      "application": "Apply at regular intervals to suppress bacterial growth"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free planting material",
+    "Prune and destroy infected twigs and branches",
+    "Avoid overhead irrigation and ensure good air circulation"
+  ],
+  "safety_tips": [
+    "Use personal protective equipment (PPE) when spraying chemicals",
+    "Do not spray during full bloom to avoid flower damage"
+  ]
+},"Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+  "pathogen": "Tomato yellow leaf curl virus (TYLCV), transmitted by whiteflies",
+  "symptoms": [
+    "Upward curling and yellowing of leaves",
+    "Stunted plant growth and shortened internodes",
+    "Reduced fruit set and yield loss"
+  ],
+  "treatments": [
+    {
+      "name": "Imidacloprid (insecticide to control whiteflies)",
+      "brand_examples": ["Confidor", "Admire"],
+      "formulation": "17.8% SL",
+      "dosage": "0.3 ml per liter of water",
+      "application": "Apply as foliar spray targeting undersides of leaves",
+      "frequency": "Repeat every 7–10 days as needed",
+      "pre_harvest_interval": "7 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem Oil + Garlic Extract",
+      "dosage": "Neem Oil: 5 ml/L + Garlic Extract: 2 ml/L",
+      "application": "Spray in early morning or evening for best results"
+    }
+  ],
+  "prevention": [
+    "Use resistant tomato varieties",
+    "Install yellow sticky traps to monitor and reduce whitefly populations",
+    "Remove and destroy infected plants early",
+    "Practice crop rotation and weed control"
+  ],
+  "safety_tips": [
+    "Avoid spraying during high temperatures",
+    "Wash hands thoroughly after handling chemicals",
+    "Wear gloves and mask while mixing and applying treatments"
+  ]
+},
+  "Cherry_(including_sour)___Powdery_mildew": {
+  "pathogen": "Podosphaera clandestina",
+  "symptoms": [
+    "White, powdery fungal growth on young leaves, shoots, and fruits",
+    "Leaf curling and distortion",
+    "Premature leaf drop and reduced fruit quality"
+  ],
+  "treatments": [
+    {
+      "name": "Sulfur-based fungicide",
+      "brand_examples": ["Thiovit", "Microthiol"],
+      "formulation": "80% WP",
+      "dosage": "2–3 g per liter of water",
+      "application": "Apply thoroughly on both leaf surfaces and stems",
+      "frequency": "Repeat every 7–10 days during humid conditions",
+      "pre_harvest_interval": "5 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Potassium bicarbonate solution",
+      "dosage": "5 g per liter of water",
+      "application": "Spray at early sign of disease and repeat as needed"
+    }
+  ],
+  "prevention": [
+    "Ensure good air circulation by proper spacing and pruning",
+    "Avoid excessive nitrogen fertilization",
+    "Select resistant varieties where available",
+    "Remove and destroy infected plant material"
+  ],
+  "safety_tips": [
+    "Use protective goggles and gloves while spraying",
+    "Avoid inhaling spray mist and wash exposed skin after application"
+  ]
+},
+  "Potato___Late_blight": {
+  "pathogen": "Phytophthora infestans",
+  "symptoms": [
+    "Water-soaked lesions on leaves that turn brown and spread rapidly",
+    "White mold growth on the underside of leaves during humid conditions",
+    "Dark, sunken lesions on stems and tubers",
+    "Rotting of tubers with foul odor"
+  ],
+  "treatments": [
+    {
+      "name": "Metalaxyl + Mancozeb",
+      "brand_examples": ["Ridomil Gold", "Mefenoxam-Mancozeb"],
+      "formulation": "68% WP",
+      "dosage": "2.5 g per liter of water",
+      "application": "Apply as a foliar spray at early sign of disease",
+      "frequency": "Repeat every 7–10 days depending on weather conditions",
+      "pre_harvest_interval": "14 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Copper-based fungicide (e.g., Copper Oxychloride)",
+      "dosage": "3 g per liter of water",
+      "application": "Spray thoroughly covering both surfaces of leaves"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free seed potatoes",
+    "Avoid overhead irrigation and overcrowding of plants",
+    "Practice crop rotation with non-host crops",
+    "Remove and destroy infected plant debris and tubers"
+  ],
+  "safety_tips": [
+    "Wear waterproof gloves and face protection during spraying",
+    "Wash hands and clothes after application",
+    "Avoid spraying near water bodies"
+  ]
+},
+  "Pepper,_bell___Bacterial_spot": {
+  "pathogen": "Xanthomonas campestris pv. vesicatoria",
+  "symptoms": [
+    "Small, water-soaked spots on leaves that enlarge and turn brown",
+    "Lesions may have yellow halos",
+    "Fruit may develop raised, scabby spots",
+    "Defoliation and reduced fruit yield"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based bactericide (e.g., Copper Hydroxide)",
+      "brand_examples": ["Kocide", "Champion", "Nordox"],
+      "formulation": "50% WP or SC",
+      "dosage": "2–3 g per liter of water",
+      "application": "Apply as foliar spray, covering both leaf surfaces",
+      "frequency": "Every 7–10 days or after rainfall",
+      "pre_harvest_interval": "5 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Bacillus subtilis-based bio-bactericide",
+      "dosage": "As per manufacturer instructions",
+      "application": "Spray thoroughly on affected parts"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free seeds and transplants",
+    "Avoid overhead irrigation",
+    "Practice crop rotation with non-solanaceous crops",
+    "Remove and destroy infected plant debris"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask while handling and spraying chemicals",
+    "Wash hands thoroughly after application",
+    "Avoid spraying during high temperatures or windy conditions"
+  ]
+},
+  "Grape___healthy": {
+  "status": "Healthy",
+  "description": "The grape plant shows no visible signs of disease or pest infestation. Leaves, stems, and fruits are in normal, vibrant condition.",
+  "recommendations": [
+    "Continue regular irrigation and nutrient management",
+    "Monitor for early signs of diseases like Black rot or Powdery mildew",
+    "Maintain good air circulation through pruning",
+    "Apply preventive organic sprays like neem oil or compost tea if desired",
+    "Keep the vineyard clean and free from plant debris"
+  ]
+},
+  "Strawberry___healthy": {
+  "status": "Healthy",
+  "description": "The strawberry plant exhibits vigorous growth with no visible signs of disease, pests, or nutritional deficiencies. Leaves are green, and fruits are developing normally.",
+  "recommendations": [
+    "Maintain consistent watering and ensure well-drained soil",
+    "Mulch around plants to conserve moisture and suppress weeds",
+    "Fertilize as needed based on soil tests",
+    "Inspect regularly for early signs of fungal or bacterial infections",
+    "Use crop rotation and proper spacing to prevent future issues"
+  ]
+},
+  "Orange___Haunglongbing_(Citrus_greening)": {
+  "pathogen": "Candidatus Liberibacter asiaticus",
+  "symptoms": [
+    "Yellowing of leaves with blotchy, asymmetrical patterns",
+    "Twig dieback and stunted growth",
+    "Small, misshapen, bitter-tasting fruits that remain green",
+    "Premature fruit drop and tree decline"
+  ],
+  "treatments": [
+    {
+      "name": "No known cure",
+      "application": "Focus on management and vector control"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil and horticultural oils",
+      "dosage": "As per manufacturer instructions",
+      "application": "Used to manage the Asian citrus psyllid vector"
+    }
+  ],
+  "prevention": [
+    "Use disease-free certified nursery stock",
+    "Control the vector (Asian citrus psyllid) with insecticides or oils",
+    "Remove and destroy infected trees promptly",
+    "Implement area-wide monitoring and vector control strategies"
+  ],
+  "safety_tips": [
+    "Use protective gear when applying oils or insecticides",
+    "Avoid unnecessary movement of citrus plant material to prevent spread"
+  ]
+},
+  "Cherry_(including_sour)___healthy": {
+  "status": "Healthy",
+  "description": "The cherry plant, including sour varieties, shows robust growth with no visible signs of disease or insect damage. Leaves are vibrant, and fruit development is normal.",
+  "recommendations": [
+    "Maintain proper pruning for airflow and sunlight penetration",
+    "Ensure consistent irrigation without waterlogging",
+    "Apply balanced fertilizers based on soil tests",
+    "Monitor for early signs of fungal diseases like powdery mildew or bacterial canker",
+    "Harvest fruits promptly to avoid attracting pests"
+  ]
+},
+  "Pepper,_bell___healthy": {
+  "status": "Healthy",
+  "description": "The bell pepper plant is in optimal health with strong stems, green leaves, and no visible symptoms of disease or pest infestation.",
+  "recommendations": [
+    "Maintain regular watering, especially during flowering and fruiting",
+    "Use well-drained, fertile soil with balanced fertilization",
+    "Inspect plants weekly for early signs of fungal or bacterial infections",
+    "Stake or support plants to avoid stem breakage",
+    "Avoid overhead watering to reduce humidity-related disease risks"
+  ]
+},
+  "Apple___Black_rot": {
+  "pathogen": "Botryosphaeria obtusa",
+  "symptoms": [
+    "Dark, sunken lesions on leaves and fruit",
+    "Concentric rings forming a bull’s-eye pattern on fruit",
+    "Cankers on twigs and branches",
+    "Leaf spots with purple margins and tan centers"
+  ],
+  "treatments": [
+    {
+      "name": "Captan",
+      "brand_examples": ["Captan 50 WP", "Orthocide"],
+      "formulation": "50% WP",
+      "dosage": "2–3 grams per liter of water",
+      "application": "Spray during pre-bloom and fruit development stages",
+      "frequency": "Repeat every 10–14 days as needed",
+      "pre_harvest_interval": "30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Copper-based fungicide (e.g., Bordeaux mixture)",
+      "dosage": "As per manufacturer instructions",
+      "application": "Apply in dormant season and repeat as preventive measure"
+    }
+  ],
+  "prevention": [
+    "Remove and destroy infected fruit, leaves, and twigs",
+    "Prune trees to increase air circulation",
+    "Avoid overhead irrigation",
+    "Maintain proper tree nutrition and sanitation"
+  ],
+  "safety_tips": [
+    "Wear protective clothing and gloves during chemical applications",
+    "Do not spray during pollination period to avoid harming bees"
+  ]
+},
+  "Peach___healthy": {
+  "status": "Healthy",
+  "description": "The peach tree is in a healthy condition, showing no signs of disease or pest damage. Leaves are green and well-formed, and fruit development is proceeding normally.",
+  "recommendations": [
+    "Maintain regular irrigation, especially during dry periods",
+    "Apply well-balanced fertilizers based on soil testing",
+    "Prune regularly to improve airflow and reduce disease pressure",
+    "Monitor for signs of pests such as aphids or peach tree borers",
+    "Apply dormant sprays in winter to prevent fungal infections"
+  ]
+},
+  "Soybean___healthy": {
+  "status": "Healthy",
+  "description": "The soybean crop exhibits healthy growth with uniform foliage, no visible disease symptoms, and optimal pod formation.",
+  "recommendations": [
+    "Ensure proper seed spacing for adequate airflow",
+    "Use certified disease-free seeds",
+    "Apply nitrogen-fixing inoculants if needed",
+    "Regularly scout fields for early signs of pests or nutrient deficiencies",
+    "Rotate crops to prevent soil-borne diseases"
+  ]
+},
+  "Potato___Early_blight": {
+  "pathogen": "Alternaria solani",
+  "symptoms": [
+    "Dark brown to black concentric lesions on older leaves",
+    "Yellowing of leaf tissue around the spots",
+    "Leaf drop starting from the bottom of the plant",
+    "Reduced tuber development and yield"
+  ],
+  "treatments": [
+    {
+      "name": "Mancozeb",
+      "brand_examples": ["Dithane M-45", "Manzeb", "Indofil M-45"],
+      "formulation": "75% WP",
+      "dosage": "2–2.5 grams per liter of water",
+      "application": "Foliar spray at early sign of symptoms",
+      "frequency": "Every 7–10 days during favorable conditions",
+      "pre_harvest_interval": "7 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Compost tea or neem oil",
+      "dosage": "Neem oil: 5 ml per liter of water",
+      "application": "Spray during early morning or late evening on infected foliage"
+    }
+  ],
+  "prevention": [
+    "Rotate crops and avoid planting potatoes in the same field for 2–3 years",
+    "Remove and destroy infected crop residues",
+    "Use certified, disease-free seed tubers",
+    "Ensure proper spacing and adequate sunlight"
+  ],
+  "safety_tips": [
+    "Use gloves, goggles, and a mask when applying fungicides",
+    "Do not apply chemicals on windy days or near harvest"
+  ]
+},
+  "Squash___Powdery_mildew": {
+  "pathogen": "Podosphaera xanthii (formerly Sphaerotheca fuliginea)",
+  "symptoms": [
+    "White, powdery fungal growth on upper and lower leaf surfaces",
+    "Yellowing and premature senescence of leaves",
+    "Reduced fruit quality and yield",
+    "Stunted growth in severe cases"
+  ],
+  "treatments": [
+    {
+      "name": "Sulfur-based fungicide",
+      "brand_examples": ["Thiovit", "Microthiol", "Kumulus"],
+      "formulation": "80% WP",
+      "dosage": "2–3 grams per liter of water",
+      "application": "Spray evenly on foliage at first sign of disease",
+      "frequency": "Every 7–14 days depending on severity",
+      "pre_harvest_interval": "5 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Potassium bicarbonate or neem oil",
+      "dosage": "Neem oil: 5 ml per liter",
+      "application": "Spray on affected parts every 7 days as needed"
+    }
+  ],
+  "prevention": [
+    "Plant resistant squash varieties if available",
+    "Avoid overhead irrigation and provide good air circulation",
+    "Remove and destroy infected plant debris",
+    "Do not overcrowd plants"
+  ],
+  "safety_tips": [
+    "Wear gloves, protective clothing, and a face mask during application",
+    "Keep children and pets away during and after spraying"
+  ]
+},
+  "Tomato___Tomato_mosaic_virus": {
+  "pathogen": "Tomato mosaic virus (ToMV)",
+  "symptoms": [
+    "Mottled light and dark green patterns on leaves",
+    "Distorted and fern-like leaf appearance",
+    "Stunted plant growth",
+    "Reduced fruit size and uneven ripening"
+  ],
+  "treatments": [],
+  "organic_alternatives": [
+    {
+      "name": "Seaweed extract or compost tea",
+      "dosage": "As per manufacturer recommendation",
+      "application": "Spray to improve plant resistance and reduce viral stress"
+    }
+  ],
+  "prevention": [
+    "Use certified virus-free seeds and transplants",
+    "Avoid smoking or handling tobacco before working with plants",
+    "Disinfect tools and hands frequently",
+    "Remove and destroy infected plants immediately",
+    "Practice crop rotation and weed management"
+  ],
+  "safety_tips": [
+    "Do not compost infected plants",
+    "Wash hands thoroughly after handling infected plants or soil"
+  ]
+},
+  "Tomato___Late_blight": {
+  "pathogen": "Phytophthora infestans",
+  "symptoms": [
+    "Large, irregularly shaped, water-soaked lesions on leaves",
+    "Dark brown to black patches with pale green margins",
+    "White fungal growth on the underside of leaves under moist conditions",
+    "Fruit may develop firm, dark, greasy lesions"
+  ],
+  "treatments": [
+    {
+      "name": "Metalaxyl + Mancozeb",
+      "brand_examples": ["Ridomil Gold", "Curzate M8"],
+      "formulation": "72 WP",
+      "dosage": "2.5 grams per liter",
+      "application": "Apply as foliar spray when disease is first observed",
+      "frequency": "Repeat every 7 to 10 days under favorable conditions",
+      "pre_harvest_interval": "14 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Copper-based fungicides",
+      "dosage": "2 to 3 grams per liter",
+      "application": "Apply weekly during wet conditions"
+    }
+  ],
+  "prevention": [
+    "Use resistant tomato varieties if available",
+    "Avoid overhead irrigation and maintain good air circulation",
+    "Remove and destroy infected plants",
+    "Do not plant tomatoes and potatoes in the same area repeatedly"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask while spraying fungicides",
+    "Avoid spraying during windy conditions",
+    "Wash produce thoroughly before use"
+  ]
+},
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+  "pathogen": "Tetranychus urticae (Two-spotted spider mite)",
+  "symptoms": [
+    "Fine stippling or speckling on upper leaf surfaces",
+    "Yellowing, bronzing, and eventual leaf drop",
+    "Presence of fine webbing on leaves and stems",
+    "Reduced plant vigor and yield"
+  ],
+  "treatments": [
+    {
+      "name": "Abamectin",
+      "brand_examples": ["Vertimec", "Agrimec"],
+      "formulation": "1.8% EC",
+      "dosage": "0.5 ml per liter of water",
+      "application": "Spray thoroughly covering undersides of leaves",
+      "frequency": "Repeat after 10 days if infestation persists",
+      "pre_harvest_interval": "7 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil",
+      "dosage": "5 ml per liter",
+      "application": "Spray every 4–7 days; ensure good coverage"
+    },
+    {
+      "name": "Insecticidal soap",
+      "dosage": "As per label instructions",
+      "application": "Spray early morning or evening to avoid leaf burn"
+    }
+  ],
+  "prevention": [
+    "Avoid water stress; maintain proper irrigation",
+    "Use yellow sticky traps to monitor pests",
+    "Introduce natural predators like ladybugs or predatory mites",
+    "Remove and destroy heavily infested leaves"
+  ],
+  "safety_tips": [
+    "Wear gloves, mask, and eye protection while spraying",
+    "Keep treated plants out of reach of children and pets for 24 hours"
+  ]
+},
+  "Tomato___Septoria_leaf_spot": {
+        "pathogen": "Septoria lycopersici",
+        "symptoms": [
+            "Small, circular spots with gray centers and dark brown edges",
+            "Yellowing and dropping of lower leaves",
+            "Reduced photosynthesis and plant vigor"
+        ],
+        "treatments": [
+            {
+                "name": "Chlorothalonil",
+                "brand_examples": [
+                    "Daconil",
+                    "Bravo",
+                    "Fung-onil"
+                ],
+                "formulation": "75% WP or SC",
+                "dosage": "1.5\u20132.5 ml per liter",
+                "application": "Spray thoroughly on affected foliage",
+                "frequency": "Every 7\u201310 days or after heavy rain",
+                "pre_harvest_interval": "7 days"
+            }
+        ],
+        "organic_alternatives": [
+            {
+                "name": "Neem Oil",
+                "dosage": "5 ml per liter of water",
+                "application": "Spray with mild soap as emulsifier"
+            }
+        ],
+        "prevention": [
+            "Remove infected leaves and destroy them",
+            "Avoid overhead watering",
+            "Use crop rotation (2\u20133 years)",
+            "Ensure proper spacing for air circulation"
+        ],
+        "safety_tips": [
+            "Wear protective gloves and mask during spraying",
+            "Do not spray during flowering or close to harvest"
+        ]
+    },
+    "Grape___Esca_(Black_Measles)": {
+  "pathogen": "Phaeoacremonium aleophilum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+  "symptoms": [
+    "Interveinal chlorosis and necrosis forming 'tiger stripe' patterns on leaves",
+    "Small, dark, sunken lesions (measles) on berries",
+    "Berry shriveling and premature drop",
+    "White rot in the wood causing internal decay"
+  ],
+  "treatments": [
+    {
+      "name": "Trunk surgery and fungicide application",
+      "brand_examples": ["No specific chemical cures; supportive fungicides may help"],
+      "formulation": "N/A",
+      "dosage": "As advised by expert viticulturists",
+      "application": "Remove and burn infected wood; apply fungicide at pruning wounds",
+      "frequency": "Annually, post-harvest and during pruning",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Biological control using Trichoderma spp.",
+      "dosage": "As per manufacturer",
+      "application": "Apply on pruning wounds and during early growth stages"
+    }
+  ],
+  "prevention": [
+    "Avoid excessive pruning wounds which open entry for pathogens",
+    "Disinfect pruning tools between cuts",
+    "Improve drainage and reduce vine stress",
+    "Remove and destroy infected vines and wood"
+  ],
+  "safety_tips": [
+    "Use protective gear while handling infected wood",
+    "Properly dispose of infected plant parts to prevent spread"
+  ]
+},
+"Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+  "pathogen": "Isariopsis clavispora",
+  "symptoms": [
+    "Irregular brown to black lesions on leaves",
+    "Lesions often confined by leaf veins giving angular appearance",
+    "Yellowing and premature leaf drop",
+    "Reduced photosynthesis and grape yield"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based fungicide",
+      "brand_examples": ["Copper Oxychloride", "Bordeaux Mixture"],
+      "formulation": "50% WP (for Copper Oxychloride)",
+      "dosage": "2–3 g per liter of water",
+      "application": "Spray evenly on foliage, especially undersides of leaves",
+      "frequency": "Every 10–14 days during active growth season",
+      "pre_harvest_interval": "7 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Bacillus subtilis-based biocontrol",
+      "dosage": "As per label instructions",
+      "application": "Apply during early symptoms or preventively"
+    }
+  ],
+  "prevention": [
+    "Prune canopy to increase air circulation",
+    "Avoid overhead irrigation",
+    "Remove fallen leaves and infected debris",
+    "Apply fungicides preventively during humid weather"
+  ],
+  "safety_tips": [
+    "Wear gloves, mask, and protective eyewear during spraying",
+    "Avoid spraying during high wind or peak sunlight hours"
+  ]
+},
+  "Apple___Cedar_apple_rust": {
+  "pathogen": "Gymnosporangium juniperi-virginianae",
+  "symptoms": [
+    "Bright yellow-orange spots on upper leaf surface",
+    "Tube-like structures on underside of leaves (aecia)",
+    "Fruit and twigs may develop lesions in severe cases",
+    "Can lead to premature leaf drop and reduced fruit quality"
+  ],
+  "treatments": [
+    {
+      "name": "Myclobutanil",
+      "brand_examples": ["Rally", "Eagle"],
+      "formulation": "10% WP or EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Begin at bud break and repeat every 7–10 days",
+      "frequency": "During active growth and especially before wet weather",
+      "pre_harvest_interval": "14 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Sulfur-based fungicide",
+      "dosage": "3–5 g per liter of water",
+      "application": "Spray at early signs and repeat every 7–10 days"
+    }
+  ],
+  "prevention": [
+    "Remove nearby juniper or cedar trees (alternate hosts)",
+    "Plant resistant apple varieties",
+    "Prune infected twigs and dispose away from orchard",
+    "Apply fungicides preventively in spring"
+  ],
+  "safety_tips": [
+    "Do not spray during bloom to avoid harming pollinators",
+    "Wear gloves and avoid skin contact with fungicides"
+  ]
+},
+  "Tomato___Target_Spot": {
+  "pathogen": "Corynespora cassiicola",
+  "symptoms": [
+    "Small, dark brown lesions with concentric rings (target-like appearance)",
+    "Lesions expand causing yellowing and premature leaf drop",
+    "Fruit lesions are sunken and dark with similar ring patterns",
+    "Severe infections reduce yield and fruit quality"
+  ],
+  "treatments": [
+    {
+      "name": "Azoxystrobin",
+      "brand_examples": ["Quadris", "Heritage"],
+      "formulation": "25% SC",
+      "dosage": "1 ml per liter of water",
+      "application": "Apply as foliar spray at first sign of disease",
+      "frequency": "Repeat every 7–14 days during disease-conducive conditions",
+      "pre_harvest_interval": "1–3 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Copper Hydroxide",
+      "dosage": "2–3 g per liter of water",
+      "application": "Spray preventively or at early symptoms"
+    }
+  ],
+  "prevention": [
+    "Avoid overhead irrigation",
+    "Maintain proper plant spacing and air flow",
+    "Use crop rotation and destroy crop residues",
+    "Plant resistant varieties if available"
+  ],
+  "safety_tips": [
+    "Use personal protective equipment (PPE) while handling fungicides",
+    "Store chemicals away from food and water sources"
+  ]
+},
+  "Tomato___Early_blight": {
+  "pathogen": "Alternaria solani",
+  "symptoms": [
+    "Dark brown spots with concentric rings (target-like) on older leaves",
+    "Yellowing around the lesions and eventual leaf drop",
+    "Stem lesions near soil line (collar rot in seedlings)",
+    "Fruit rot near stem attachment during ripening"
+  ],
+  "treatments": [
+    {
+      "name": "Mancozeb",
+      "brand_examples": ["Dithane M-45", "Manzate"],
+      "formulation": "75% WP",
+      "dosage": "2.5 g per liter of water",
+      "application": "Spray every 7–10 days starting at first symptoms",
+      "frequency": "Continue through growing season under favorable conditions",
+      "pre_harvest_interval": "5–7 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem Oil with Baking Soda",
+      "dosage": "Neem Oil: 5 ml, Baking Soda: 1 tsp per liter of water",
+      "application": "Spray weekly on foliage during early morning or evening"
+    }
+  ],
+  "prevention": [
+    "Practice crop rotation (2–3 years)",
+    "Avoid working in wet fields to reduce spread",
+    "Remove and destroy infected plant debris",
+    "Use drip irrigation and avoid wetting foliage"
+  ],
+  "safety_tips": [
+    "Wear gloves and protective gear during fungicide application",
+    "Wash hands thoroughly after spraying"
+  ]
+},
+  "Blueberry___healthy": {
+  "status": "No disease detected",
+  "symptoms": [],
+  "treatments": [],
+  "organic_alternatives": [],
+  "prevention": [
+    "Maintain good air circulation and drainage",
+    "Regular pruning to remove dead or crowded branches",
+    "Monitor for pests or fungal signs regularly",
+    "Use mulch to retain moisture and prevent weed growth"
+  ],
+  "safety_tips": [
+    "Ensure tools used in pruning are sanitized",
+    "Avoid overwatering to prevent root rot"
+  ]
+},
+  "Potato___healthy": {
+  "status": "No disease detected",
+  "symptoms": [],
+  "treatments": [],
+  "organic_alternatives": [],
+  "prevention": [
+    "Use certified disease-free seed potatoes",
+    "Ensure well-drained soil and proper crop rotation",
+    "Avoid overhead irrigation to minimize moisture on leaves",
+    "Regularly inspect for signs of pests or early disease"
+  ],
+  "safety_tips": [
+    "Clean and disinfect equipment before and after use",
+    "Handle plants gently to avoid wounding, which can invite pathogens"
+  ]
+},
+  "Tomato___Leaf_Mold": {
+  "pathogen": "Fulvia fulva (formerly Cladosporium fulvum)",
+  "symptoms": [
+    "Yellow spots on upper leaf surfaces that enlarge over time",
+    "Olive-green to grayish-purple mold on the underside of leaves",
+    "Leaves eventually curl, wither, and drop prematurely",
+    "Reduced yield and fruit quality if not managed"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based fungicides",
+      "brand_examples": ["Champ", "Kocide"],
+      "formulation": "Available in WP or SC forms",
+      "dosage": "As per label instructions (typically 2–3 g or ml per liter)",
+      "application": "Spray at first sign of symptoms, ensuring thorough coverage",
+      "frequency": "Repeat every 7–10 days under humid conditions",
+      "pre_harvest_interval": "3–5 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Potassium bicarbonate spray",
+      "dosage": "5 g per liter of water",
+      "application": "Spray on infected foliage weekly"
+    }
+  ],
+  "prevention": [
+    "Ensure good air circulation in greenhouses and fields",
+    "Avoid overhead irrigation and reduce humidity",
+    "Remove and destroy infected leaves",
+    "Use resistant tomato varieties if available"
+  ],
+  "safety_tips": [
+    "Use protective equipment when applying fungicides",
+    "Avoid entering treated areas until spray has dried"
+  ]
+},
+  "Tomato___Bacterial_spot": {
+  "pathogen": "Xanthomonas campestris pv. vesicatoria",
+  "symptoms": [
+    "Small, water-soaked spots on leaves, which enlarge and turn brown",
+    "Lesions on fruit may be raised, scabby, and dark in color",
+    "Leaf spots may cause defoliation, reducing yield and fruit quality"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based bactericides (e.g., copper hydroxide)",
+      "brand_examples": ["Kocide", "Nordox", "Cuprofix"],
+      "formulation": "WP or SC",
+      "dosage": "2–3 g or ml per liter of water",
+      "application": "Spray thoroughly on both leaf surfaces and fruits",
+      "frequency": "Repeat every 7 days during wet or humid periods",
+      "pre_harvest_interval": "0–5 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Serenade (Bacillus subtilis based)",
+      "dosage": "As per label instructions",
+      "application": "Apply as foliar spray during early stages of infection"
+    }
+  ],
+  "prevention": [
+    "Use disease-free seeds and resistant varieties",
+    "Avoid working in fields when plants are wet",
+    "Rotate crops with non-hosts for 2–3 years",
+    "Remove and destroy infected plants and debris"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask while spraying chemicals",
+    "Wash produce thoroughly before consumption"
+  ]
+},
+" brinjal__Damping-Off (Seedling Disease)": {
+  "pathogen": "Pythium spp., Rhizoctonia solani, and Fusarium spp.",
+  "symptoms": [
+    "Seedlings fail to emerge or collapse after emergence",
+    "Water-soaked lesions at the base of the stem near the soil line",
+    "Wilted, discolored, and rotting seedlings in nursery beds",
+    "Patchy emergence and poor stand establishment"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicidal seed treatment with Thiram or Captan",
+      "brand_examples": ["Thiram 75WP", "Captan 50WP"],
+      "formulation": "WP",
+      "dosage": "2–3 g per kg of seed",
+      "application": "Mix thoroughly with seeds before sowing",
+      "frequency": "One-time seed treatment before sowing",
+      "pre_harvest_interval": "Not applicable for seed treatment"
+    },
+    {
+      "name": "Soil drenching with Metalaxyl or Carbendazim",
+      "brand_examples": ["Ridomil", "Bavistin"],
+      "formulation": "WP",
+      "dosage": "2 g per liter of water",
+      "application": "Drench soil around seedlings at sowing and emergence",
+      "frequency": "Repeat every 10–15 days during susceptible stage",
+      "pre_harvest_interval": "20–30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride (biofungicide)",
+      "dosage": "10 g per kg of seed or 50 g per square meter in soil",
+      "application": "Seed treatment and soil application in nursery"
+    },
+    {
+      "name": "Neem cake or neem-based formulations",
+      "dosage": "200–400 kg per acre",
+      "application": "Incorporate into nursery bed before sowing"
+    }
+  ],
+  "prevention": [
+    "Use sterilized soil or well-prepared nursery beds",
+    "Avoid overwatering and ensure proper drainage",
+    "Sow seeds at correct spacing to prevent overcrowding",
+    "Use disease-free, certified seeds"
+  ],
+  "safety_tips": [
+    "Avoid skin contact with fungicides; use gloves and masks",
+    "Store treated seeds and chemicals out of reach of children"
+  ]
+},
+"Brinjal__ Early Blight": {
+  "pathogen": "Alternaria melongenae",
+  "symptoms": [
+    "Dark brown to black concentric rings or target-like spots on older leaves",
+    "Yellowing and premature dropping of affected leaves",
+    "Lesions may appear on stems and fruits, leading to rotting",
+    "Reduced plant vigor and yield due to defoliation"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicides such as Mancozeb or Chlorothalonil",
+      "brand_examples": ["Dithane M-45", "Kavach", "Indofil M-45"],
+      "formulation": "WP",
+      "dosage": "2–2.5 g per liter of water",
+      "application": "Spray uniformly covering both sides of the leaves",
+      "frequency": "Repeat every 7–10 days during disease-prone period",
+      "pre_harvest_interval": "7–10 days depending on the fungicide"
+    },
+    {
+      "name": "Azoxystrobin or Tebuconazole-based fungicides",
+      "brand_examples": ["Amistar", "Folicur"],
+      "formulation": "SC or EC",
+      "dosage": "1–2 ml per liter of water",
+      "application": "Spray at early signs of disease and continue preventively",
+      "frequency": "Every 10–15 days",
+      "pre_harvest_interval": "10–15 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil (cold-pressed)",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray at early symptom appearance and repeat as needed"
+    },
+    {
+      "name": "Bacillus subtilis-based biofungicide (e.g., Serenade)",
+      "dosage": "As per label instructions",
+      "application": "Apply as foliar spray during early stages of infection"
+    }
+  ],
+  "prevention": [
+    "Practice crop rotation with non-solanaceous crops",
+    "Remove and destroy infected plant debris after harvest",
+    "Use resistant or tolerant varieties if available",
+    "Avoid overhead irrigation and ensure good air circulation"
+  ],
+  "safety_tips": [
+    "Wear protective gear while handling and spraying fungicides",
+    "Do not mix fungicides with other chemicals unless label-approved",
+    "Wash vegetables thoroughly before consumption"
+  ]
+},
+"Brinjal__ Powdery Mildew": {
+  "pathogen": "Leveillula taurica",
+  "symptoms": [
+    "White, powdery fungal growth on upper and lower leaf surfaces",
+    "Infected leaves may curl, yellow, and dry prematurely",
+    "Reduced photosynthesis and plant vigor",
+    "Severe infection can cause defoliation and poor fruit development"
+  ],
+  "treatments": [
+    {
+      "name": "Sulfur-based fungicides or systemic fungicides like Hexaconazole",
+      "brand_examples": ["Sulfex", "Contaf", "Hexastar"],
+      "formulation": "WP or EC",
+      "dosage": "2–3 g or ml per liter of water",
+      "application": "Spray thoroughly on affected foliage, especially undersides",
+      "frequency": "Repeat every 10–14 days",
+      "pre_harvest_interval": "7 days"
+    },
+    {
+      "name": "Penconazole or Myclobutanil",
+      "brand_examples": ["Topas", "Systhane"],
+      "formulation": "EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Spray at first appearance of symptoms",
+      "frequency": "Every 10–15 days as needed",
+      "pre_harvest_interval": "10 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Potassium bicarbonate",
+      "dosage": "5–10 g per liter of water",
+      "application": "Spray on foliage weekly during early stages"
+    },
+    {
+      "name": "Neem oil (cold-pressed)",
+      "dosage": "5 ml per liter of water",
+      "application": "Apply as a foliar spray at early signs of infection"
+    }
+  ],
+  "prevention": [
+    "Ensure good air circulation and avoid overcrowding plants",
+    "Avoid excessive nitrogen fertilization",
+    "Remove and destroy infected leaves and plant debris",
+    "Practice crop rotation and clean cultivation"
+  ],
+  "safety_tips": [
+    "Wear gloves and a face mask while handling and spraying fungicides",
+    "Avoid spraying during windy periods to prevent drift",
+    "Wash produce thoroughly before consumption"
+  ]
+},
+"Brinjal__ Cercospora Leaf Spot": {
+  "pathogen": "Cercospora solani-melongenae",
+  "symptoms": [
+    "Small, circular to irregular brown spots on leaves with grayish centers",
+    "Spots may coalesce, leading to blighting of large leaf areas",
+    "Severe infections cause premature leaf drop",
+    "Reduced photosynthesis and poor plant growth"
+  ],
+  "treatments": [
+    {
+      "name": "Mancozeb or Chlorothalonil fungicides",
+      "brand_examples": ["Indofil M-45", "Kavach"],
+      "formulation": "WP",
+      "dosage": "2–2.5 g per liter of water",
+      "application": "Spray on both surfaces of leaves at early symptom appearance",
+      "frequency": "Repeat every 7–10 days",
+      "pre_harvest_interval": "7 days"
+    },
+    {
+      "name": "Propiconazole (systemic fungicide)",
+      "brand_examples": ["Tilt", "Bumper"],
+      "formulation": "EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Spray as a preventive or curative measure",
+      "frequency": "Every 10–14 days",
+      "pre_harvest_interval": "10 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil (cold-pressed)",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray weekly during early stages of disease"
+    },
+    {
+      "name": "Trichoderma viride (biofungicide)",
+      "dosage": "4 g per liter of water for foliar spray",
+      "application": "Apply to foliage and soil to suppress pathogen development"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free seeds",
+    "Avoid overhead irrigation and ensure good drainage",
+    "Practice crop rotation with non-host crops for 2–3 years",
+    "Remove and destroy infected leaves and crop residues"
+  ],
+  "safety_tips": [
+    "Use personal protective equipment (PPE) while handling chemicals",
+    "Do not eat, drink, or smoke during pesticide application",
+    "Wash produce thoroughly before consumption"
+  ]
+},
+"Cotton__ Bacterial Blight (Angular Leaf Spot)": {
+  "pathogen": "Xanthomonas citri pv. malvacearum",
+  "symptoms": [
+    "Water-soaked, angular lesions on leaves, often delimited by leaf veins",
+    "Lesions turn dark brown to black and may coalesce, causing leaf blight",
+    "Stem and petiole lesions appear as black streaks, leading to dieback",
+    "Boll infection results in sunken, dark spots and poor fiber development",
+    "Infected seedlings may wilt and die, reducing plant population"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based bactericides (e.g., Copper oxychloride)",
+      "brand_examples": ["Fytolan", "Blitox", "Nordox"],
+      "formulation": "WP",
+      "dosage": "2–3 g per liter of water",
+      "application": "Spray on foliage during early stages of infection",
+      "frequency": "Repeat every 7–10 days during favorable conditions",
+      "pre_harvest_interval": "0–5 days depending on product"
+    },
+    {
+      "name": "Seed treatment with Streptocycline + Copper oxychloride",
+      "brand_examples": ["Streptocycline + Blitox"],
+      "formulation": "Powder",
+      "dosage": "Streptocycline 0.01% + Copper oxychloride 0.2%",
+      "application": "Soak seeds in the solution for 30 minutes before sowing",
+      "frequency": "One-time treatment before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem leaf extract (5%) or garlic extract (5%)",
+      "dosage": "50 ml extract per liter of water",
+      "application": "Spray during early stages of disease development"
+    },
+    {
+      "name": "Pseudomonas fluorescens (bio-control agent)",
+      "dosage": "10 g per kg seed or 5 g per liter for foliar spray",
+      "application": "Use for seed treatment and foliar spray"
+    }
+  ],
+  "prevention": [
+    "Use resistant cotton varieties wherever available",
+    "Adopt crop rotation with non-host crops like cereals",
+    "Avoid overhead irrigation and ensure proper drainage",
+    "Remove and destroy crop residues and infected debris",
+    "Disinfect tools and avoid field activities when plants are wet"
+  ],
+  "safety_tips": [
+    "Wear gloves, goggles, and mask during chemical handling",
+    "Store pesticides safely away from food and water sources",
+    "Wash hands and face after application",
+    "Observe recommended waiting period before harvest"
+  ]
+},
+"Cotton__ Boll Rot": {
+  "pathogen": "Multiple pathogens including *Fusarium spp.*, *Aspergillus spp.*, *Rhizopus spp.*, and *Colletotrichum spp.*",
+  "symptoms": [
+    "Initial water-soaked lesions on green bolls",
+    "Lesions enlarge, turn brown to black, and may ooze fungal spores",
+    "Bolls become soft, decay internally, and may fall off prematurely",
+    "Lint may be stained and of poor quality",
+    "Foul odor may be emitted from rotting bolls"
+  ],
+  "treatments": [
+    {
+      "name": "Carbendazim or Mancozeb based fungicides",
+      "brand_examples": ["Bavistin", "Indofil M-45", "Dithane M-45"],
+      "formulation": "WP",
+      "dosage": "2–3 g per liter of water",
+      "application": "Spray on bolls and canopy at early symptom appearance",
+      "frequency": "Repeat every 10–12 days, especially during humid weather",
+      "pre_harvest_interval": "10 days"
+    },
+    {
+      "name": "Combination fungicides (Carbendazim + Mancozeb)",
+      "brand_examples": ["Companion", "Markzeb Plus"],
+      "formulation": "WP",
+      "dosage": "2–2.5 g per liter of water",
+      "application": "Spray to prevent secondary infection on bolls",
+      "frequency": "As per disease severity",
+      "pre_harvest_interval": "10–15 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride (biofungicide)",
+      "dosage": "10 g per liter of water",
+      "application": "Spray on bolls and soil to suppress fungal pathogens"
+    },
+    {
+      "name": "Neem oil (cold-pressed)",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray during flowering and boll formation stages"
+    }
+  ],
+  "prevention": [
+    "Avoid overcrowding and ensure good air circulation",
+    "Remove and destroy infected bolls and plant debris",
+    "Avoid waterlogging and ensure proper field drainage",
+    "Follow balanced fertilization to avoid excessive vegetative growth",
+    "Time irrigation to avoid wetting of bolls during flowering"
+  ],
+  "safety_tips": [
+    "Wear protective clothing, gloves, and mask during fungicide application",
+    "Avoid contact with skin and eyes",
+    "Keep fungicides out of reach of children and animals",
+    "Wash treated produce before handling or consumption"
+  ]
+},
+"Cotton__ Cotton Leaf Curl Virus (CLCuV)": {
+  "pathogen": "Cotton Leaf Curl Virus (CLCuV), transmitted by whiteflies (*Bemisia tabaci*)",
+  "symptoms": [
+    "Upward or downward curling of leaf margins",
+    "Thickening and darkening of veins",
+    "Development of leaf-like enations (outgrowths) on the underside of leaves",
+    "Stunted plant growth and reduced boll formation",
+    "Significant reduction in fiber quality and yield"
+  ],
+  "treatments": [
+    {
+      "name": "Imidacloprid (systemic insecticide) for whitefly control",
+      "brand_examples": ["Confidor", "Admire"],
+      "formulation": "SL or WG",
+      "dosage": "0.5–1 ml per liter of water",
+      "application": "Spray at early infestation stage targeting the underside of leaves",
+      "frequency": "Every 10–14 days as needed",
+      "pre_harvest_interval": "20 days"
+    },
+    {
+      "name": "Thiamethoxam or Acetamiprid (systemic neonicotinoids)",
+      "brand_examples": ["Actara", "Pride"],
+      "formulation": "WDG or SP",
+      "dosage": "0.3–0.5 g per liter of water",
+      "application": "Foliar spray targeting whiteflies",
+      "frequency": "Repeat based on pest monitoring",
+      "pre_harvest_interval": "15–20 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil (Azadirachtin-based)",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray during early crop stages to repel whiteflies"
+    },
+    {
+      "name": "Yellow sticky traps",
+      "dosage": "10–12 traps per acre",
+      "application": "Install throughout the field to monitor and reduce whitefly population"
+    },
+    {
+      "name": "Verticillium lecanii or Beauveria bassiana (entomopathogenic fungi)",
+      "dosage": "As per label recommendation",
+      "application": "Spray on the crop as a biocontrol agent for whiteflies"
+    }
+  ],
+  "prevention": [
+    "Use resistant or tolerant cotton varieties",
+    "Avoid early and late sowing which favors whitefly buildup",
+    "Uproot and destroy infected plants to reduce virus spread",
+    "Maintain field sanitation and remove weed hosts",
+    "Avoid excessive use of nitrogen fertilizers that promote succulent growth"
+  ],
+  "safety_tips": [
+    "Avoid spraying during peak pollination hours to protect pollinators",
+    "Wear gloves, mask, and goggles while spraying chemicals",
+    "Follow label instructions and waiting periods strictly",
+    "Store pesticides in original containers away from food and water sources"
+  ]
+},
+"Cotton__ Fusarium Wilt": {
+  "pathogen": "Fusarium oxysporum f. sp. vasinfectum",
+  "symptoms": [
+    "Yellowing and wilting of lower leaves, progressing upward",
+    "Leaf margins may become necrotic and curl inward",
+    "Vascular browning visible in stem cross-sections",
+    "Plants may be stunted and show unilateral wilting",
+    "Severe infections result in premature plant death and reduced yield"
+  ],
+  "treatments": [
+    {
+      "name": "Carbendazim (systemic fungicide)",
+      "brand_examples": ["Bavistin", "Derosal"],
+      "formulation": "WP",
+      "dosage": "1–2 g per liter of water",
+      "application": "Soil drenching around the plant base at early symptoms",
+      "frequency": "Repeat every 10–15 days based on disease severity",
+      "pre_harvest_interval": "15 days"
+    },
+    {
+      "name": "Soil application of bio-fungicide Trichoderma harzianum",
+      "brand_examples": ["TrichoRich", "Trichostar"],
+      "formulation": "Powder or granules",
+      "dosage": "5–10 kg per acre mixed with compost or FYM",
+      "application": "Apply before sowing or during early growth stages"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem cake or mustard cake",
+      "dosage": "100–200 kg per acre",
+      "application": "Incorporate into soil before sowing to suppress soil-borne pathogens"
+    },
+    {
+      "name": "Trichoderma viride seed treatment",
+      "dosage": "10 g per kg of seed",
+      "application": "Coat seeds thoroughly before planting"
+    }
+  ],
+  "prevention": [
+    "Use resistant or tolerant cotton varieties",
+    "Practice crop rotation with non-hosts like cereals for 2–3 years",
+    "Avoid over-irrigation and ensure well-drained soils",
+    "Use certified disease-free seeds and healthy seedlings",
+    "Maintain field hygiene and remove infected plant debris"
+  ],
+  "safety_tips": [
+    "Use gloves and masks when handling fungicides or bio-agents",
+    "Avoid contact with skin and eyes during application",
+    "Wash hands thoroughly after handling chemicals",
+    "Follow label instructions and store products safely"
+  ]
+},
+"Cotton__ Root Rot": {
+  "pathogen": "Rhizoctonia bataticola (Macrophomina phaseolina)",
+  "symptoms": [
+    "Sudden wilting of plants, especially during hot, dry conditions",
+    "Leaves turn yellow and dry up while remaining attached",
+    "Roots show dry rot with black discoloration and shredding",
+    "Plants can be easily pulled from the soil due to decayed roots",
+    "Reduced boll formation and patchy crop appearance"
+  ],
+  "treatments": [
+    {
+      "name": "Carbendazim or Tebuconazole-based fungicides",
+      "brand_examples": ["Bavistin", "Folicur", "Raxil"],
+      "formulation": "WP or SC",
+      "dosage": "2 g or ml per liter of water",
+      "application": "Soil drenching near the base of affected plants",
+      "frequency": "Repeat every 10–15 days if symptoms persist",
+      "pre_harvest_interval": "15–20 days"
+    },
+    {
+      "name": "Trichoderma harzianum (biofungicide)",
+      "brand_examples": ["Trichostar", "TrichoRich"],
+      "formulation": "Powder or granules",
+      "dosage": "5–10 kg per acre mixed with compost or FYM",
+      "application": "Broadcast before sowing or as basal dose"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem cake or castor cake",
+      "dosage": "200–250 kg per acre",
+      "application": "Mix in soil during land preparation to reduce fungal load"
+    },
+    {
+      "name": "Pseudomonas fluorescens (biocontrol agent)",
+      "dosage": "10 g per kg of seed or 2.5 kg per acre in soil",
+      "application": "Seed treatment and soil application"
+    }
+  ],
+  "prevention": [
+    "Use well-drained soil and avoid over-irrigation",
+    "Ensure proper field sanitation and remove plant debris",
+    "Rotate crops with non-hosts like cereals",
+    "Use resistant cotton varieties if available",
+    "Avoid sowing in infested fields repeatedly"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask while handling fungicides or bioagents",
+    "Avoid inhaling chemical dust or spray mist",
+    "Wash hands and clothes after application",
+    "Store all agrochemicals out of reach of children and animals"
+  ]
+},
+"paddy__ Blast Disease": {
+  "pathogen": "Magnaporthe oryzae (Pyricularia oryzae)",
+  "symptoms": [
+    "Spindle-shaped lesions with gray centers and brown margins on leaves",
+    "Lesions may enlarge, coalesce, and cause leaf drying",
+    "Neck blast causes rotting of the neck just below the panicle, leading to grain sterility",
+    "Panicle blast results in incomplete grain filling and white panicles",
+    "In severe cases, entire fields show scorched appearance"
+  ],
+  "treatments": [
+    {
+      "name": "Tricyclazole (systemic fungicide)",
+      "brand_examples": ["Beam", "Sivic", "Blastin"],
+      "formulation": "WP",
+      "dosage": "0.6–1 g per liter of water",
+      "application": "Foliar spray at early symptoms or booting stage",
+      "frequency": "Repeat after 10–12 days depending on disease pressure",
+      "pre_harvest_interval": "25 days"
+    },
+    {
+      "name": "Azoxystrobin + Difenoconazole (combo fungicide)",
+      "brand_examples": ["Amistar Top", "Ortiva Top"],
+      "formulation": "SC",
+      "dosage": "1 ml per liter of water",
+      "application": "Spray during early flowering stage to control neck and panicle blast",
+      "frequency": "Repeat as needed based on scouting reports",
+      "pre_harvest_interval": "30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Pseudomonas fluorescens (biocontrol agent)",
+      "dosage": "10 g/kg of seed or 2.5 kg/acre in soil",
+      "application": "Seed treatment and soil application at nursery stage"
+    },
+    {
+      "name": "Neem oil spray",
+      "dosage": "3–5 ml per liter of water",
+      "application": "Spray at early stages to prevent initial infection"
+    }
+  ],
+  "prevention": [
+    "Use resistant or tolerant rice varieties",
+    "Avoid excessive nitrogen application, especially in early stages",
+    "Maintain proper spacing to reduce humidity in the crop canopy",
+    "Destroy infected stubbles and crop residues after harvest",
+    "Adopt timely sowing and balanced fertilization practices"
+  ],
+  "safety_tips": [
+    "Use gloves and mask during chemical preparation and spraying",
+    "Avoid entry into sprayed fields for at least 24 hours",
+    "Wash equipment and protective gear after use",
+    "Store fungicides safely, away from food and water sources"
+  ]
+},
+"paddy__ Rice Tungro Disease": {
+  "pathogen": "Rice tungro bacilliform virus (RTBV) and Rice tungro spherical virus (RTSV)",
+  "symptoms": [
+    "Stunted growth and reduced tillering",
+    "Yellow to orange discoloration of leaves starting from the tip",
+    "Older leaves show interveinal chlorosis and may turn brown",
+    "Delayed flowering and poor panicle exertion",
+    "Grains are poorly filled or sterile, leading to low yield"
+  ],
+  "treatments": [
+    {
+      "name": "No direct chemical control for the virus; focus is on vector control",
+      "brand_examples": ["Confidor", "Actara", "Admire"],
+      "formulation": "SC or WG",
+      "dosage": "0.3–0.5 ml or g per liter of water",
+      "application": "Spray to control green leafhopper (GLH), the vector of Tungro",
+      "frequency": "Repeat every 10–15 days during early growth stages",
+      "pre_harvest_interval": "15 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem-based insecticides (e.g., Neem oil or Azadirachtin)",
+      "dosage": "3–5 ml per liter of water",
+      "application": "Spray at seedling and early tillering stages to deter vectors"
+    },
+    {
+      "name": "Use of biological control agents like spiders and mirid bugs",
+      "application": "Encourage natural predators in rice ecosystems"
+    }
+  ],
+  "prevention": [
+    "Use Tungro-resistant varieties (e.g., IR64, IR72)",
+    "Remove and destroy infected plants early",
+    "Avoid planting near old infected fields",
+    "Perform rouging in nursery beds to eliminate infected seedlings",
+    "Maintain clean bunds and reduce alternate weed hosts of vectors",
+    "Synchronize planting in a region to disrupt vector life cycle"
+  ],
+  "safety_tips": [
+    "Wear protective gloves and mask while spraying insecticides",
+    "Avoid overexposure to chemicals—use in early morning or late evening",
+    "Wash hands and equipment after application",
+    "Store insecticides in original containers away from children and animals"
+  ]
+},
+" paddy__Bacterial Leaf Blight (BLB)": {
+  "pathogen": "Xanthomonas oryzae pv. oryzae",
+  "symptoms": [
+    "Yellowing and drying of leaf tips progressing down the margins",
+    "Water-soaked lesions that turn straw-colored and spread rapidly",
+    "V-shaped lesions extending from leaf tip downward",
+    "Severe infection leads to drying of entire leaves and wilting",
+    "Infected fields appear scorched and yield is significantly reduced"
+  ],
+  "treatments": [
+    {
+      "name": "Streptomycin + Tetracycline antibiotic mixture",
+      "brand_examples": ["Streptocycline"],
+      "formulation": "WP",
+      "dosage": "100–150 ppm (0.1–0.15 g per liter of water)",
+      "application": "Spray at early appearance of symptoms",
+      "frequency": "Repeat at 7–10 day intervals based on disease severity",
+      "pre_harvest_interval": "15–20 days"
+    },
+    {
+      "name": "Copper oxychloride (bactericide + fungicide)",
+      "brand_examples": ["Blitox", "Fytolan"],
+      "formulation": "WP",
+      "dosage": "2.5–3 g per liter of water",
+      "application": "Foliar spray for suppression of bacterial spread",
+      "frequency": "Repeat every 10 days if conditions persist",
+      "pre_harvest_interval": "20 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Pseudomonas fluorescens (biocontrol agent)",
+      "dosage": "10 g per kg of seed or 2.5 kg per acre",
+      "application": "Seed treatment and soil application to enhance resistance"
+    },
+    {
+      "name": "Neem oil spray",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray at early stages to reduce bacterial load"
+    }
+  ],
+  "prevention": [
+    "Use BLB-resistant rice varieties (e.g., IRBB series)",
+    "Avoid excessive nitrogen fertilizer, especially urea",
+    "Ensure good drainage and avoid water stagnation",
+    "Destroy crop residues and avoid ratooning",
+    "Adopt field sanitation and timely sowing"
+  ],
+  "safety_tips": [
+    "Use protective gloves and mask while preparing and applying sprays",
+    "Avoid spraying during hot parts of the day",
+    "Wash equipment and hands after handling chemicals",
+    "Keep antibiotics and bactericides away from food and water"
+  ]
+},
+"Paddy___Brown_Spot": {
+  "pathogen": "Bipolaris oryzae (syn. Helminthosporium oryzae)",
+  "symptoms": [
+    "Small, circular to oval brown lesions with gray or whitish centers on leaves",
+    "Spots may coalesce causing large necrotic patches",
+    "Infected grains may appear discolored (dirty panicle)",
+    "Seedlings may show browning of coleoptiles and leaf sheaths",
+    "Reduces seed germination and affects grain filling"
+  ],
+  "treatments": [
+    {
+      "name": "Propiconazole (systemic fungicide)",
+      "brand_examples": ["Tilt", "Bumper", "Score"],
+      "formulation": "EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Foliar spray at early stages of disease appearance",
+      "frequency": "Repeat after 10–15 days depending on disease pressure",
+      "pre_harvest_interval": "30 days"
+    },
+    {
+      "name": "Carbendazim + Mancozeb (combination fungicide)",
+      "brand_examples": ["Companion", "Saaf"],
+      "formulation": "WP",
+      "dosage": "2 g per liter of water",
+      "application": "Spray during tillering and panicle initiation stages",
+      "frequency": "2–3 applications at 10-day intervals",
+      "pre_harvest_interval": "30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray as a preventive measure or at early infection stage"
+    },
+    {
+      "name": "Pseudomonas fluorescens",
+      "dosage": "2.5 kg/acre mixed with compost or FYM",
+      "application": "Apply in nursery and main field to suppress fungal growth"
+    }
+  ],
+  "prevention": [
+    "Use certified, disease-free seeds",
+    "Avoid dense planting and ensure good aeration",
+    "Apply balanced fertilizer (adequate potassium and phosphorus)",
+    "Avoid excessive nitrogen which favors disease",
+    "Destroy crop debris and follow crop rotation"
+  ],
+  "safety_tips": [
+    "Wear gloves, goggles, and mask while handling fungicides",
+    "Do not store fungicides near food or animal feed",
+    "Wash hands and change clothes after spraying",
+    "Follow label instructions for safe intervals before harvest"
+  ]
+},
+"paddy__Sheath Blight(Rhizoctonia solani)": {
+  "pathogen": "Rhizoctonia solani",
+  "symptoms": [
+    "Initial greenish-gray water-soaked lesions on the lower leaf sheaths near the water line",
+    "Lesions enlarge and turn brown with gray or white centers and irregular margins",
+    "In severe cases, lesions spread to upper leaves and panicles, causing lodging",
+    "White mycelial growth and sclerotia may be seen on the infected parts",
+    "Reduces grain filling, leading to significant yield loss"
+  ],
+  "treatments": [
+    {
+      "name": "Validamycin (antibiotic fungicide)",
+      "brand_examples": ["Validacin", "Sheathmar", "Veezole"],
+      "formulation": "L",
+      "dosage": "2 ml per liter of water",
+      "application": "Spray at early appearance of disease symptoms",
+      "frequency": "Repeat every 10–12 days if conditions persist",
+      "pre_harvest_interval": "20 days"
+    },
+    {
+      "name": "Hexaconazole (systemic fungicide)",
+      "brand_examples": ["Contaf", "Avtar"],
+      "formulation": "SC or EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Foliar spray, especially during panicle initiation",
+      "frequency": "Repeat after 10–15 days if needed",
+      "pre_harvest_interval": "30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Pseudomonas fluorescens (biocontrol agent)",
+      "dosage": "2.5 kg per acre with compost or FYM",
+      "application": "Broadcast in nursery and main field to suppress fungal infection"
+    },
+    {
+      "name": "Trichoderma harzianum",
+      "dosage": "4 g per kg seed or 2.5 kg per acre with compost",
+      "application": "Seed treatment and soil application for early protection"
+    }
+  ],
+  "prevention": [
+    "Avoid excessive nitrogen application",
+    "Use proper spacing to reduce canopy humidity",
+    "Remove and destroy infected plant debris",
+    "Avoid continuous rice cropping; rotate with non-host crops",
+    "Use tolerant varieties where available"
+  ],
+  "safety_tips": [
+    "Wear protective gloves, goggles, and mask during spraying",
+    "Avoid entering sprayed fields for 24 hours",
+    "Store fungicides safely and label clearly",
+    "Wash hands and change clothes after application"
+  ]
+},
+"paddy__Sheath Rot(Sarocladium oryzae)": {
+  "pathogen": "Sarocladium oryzae (formerly Acrocylindrium oryzae)",
+  "symptoms": [
+    "Oblong or irregular brown lesions on flag leaf sheaths enclosing the panicle",
+    "Sheaths turn pale to brown and dry out, affecting panicle emergence",
+    "Unemerged or partially emerged panicles may rot inside the sheath",
+    "Grains become discolored, chaffy, and poorly developed",
+    "Affected panicles result in significant yield loss"
+  ],
+  "treatments": [
+    {
+      "name": "Carbendazim (systemic fungicide)",
+      "brand_examples": ["Bavistin", "Derosal"],
+      "formulation": "WP",
+      "dosage": "1 g per liter of water",
+      "application": "Spray during booting stage when symptoms are first observed",
+      "frequency": "Repeat after 10–15 days if needed",
+      "pre_harvest_interval": "30 days"
+    },
+    {
+      "name": "Hexaconazole",
+      "brand_examples": ["Contaf", "Avtar"],
+      "formulation": "SC or EC",
+      "dosage": "1 ml per liter of water",
+      "application": "Spray during panicle initiation and early heading",
+      "frequency": "Repeat as necessary during favorable conditions",
+      "pre_harvest_interval": "30 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Pseudomonas fluorescens",
+      "dosage": "10 g/kg seed or 2.5 kg/acre with FYM",
+      "application": "Use as seed treatment and apply in field at transplanting"
+    },
+    {
+      "name": "Trichoderma viride",
+      "dosage": "4 g/kg seed and 2.5 kg/acre with compost",
+      "application": "Seed and soil treatment to reduce sheath rot incidence"
+    }
+  ],
+  "prevention": [
+    "Use disease-free seeds and tolerant varieties",
+    "Maintain proper spacing and drainage to reduce humidity",
+    "Avoid excessive nitrogen fertilization",
+    "Remove infected panicles and plant debris after harvest",
+    "Follow crop rotation with non-host crops"
+  ],
+  "safety_tips": [
+    "Wear gloves, mask, and goggles while handling fungicides",
+    "Do not eat, drink, or smoke while spraying",
+    "Clean equipment thoroughly after use",
+    "Store chemicals out of reach of children and livestock"
+  ]
+},
+"sugarcane__ Ratoon Stunting Disease (RSD)": {
+  "pathogen": "Leifsonia xyli subsp. xyli (a xylem-limited bacterium)",
+  "symptoms": [
+    "No distinct external symptoms in early stages",
+    "Reduced stalk height and diameter in ratoon crops",
+    "Uneven growth and stunted appearance in affected patches",
+    "Poor ratoon establishment and reduced tillering",
+    "Internal symptom includes orange-red discoloration of vascular bundles at the nodal regions"
+  ],
+  "treatments": [
+    {
+      "name": "Hot water treatment (physical method)",
+      "brand_examples": [],
+      "formulation": "Heat-based method",
+      "dosage": "Soak seed sets in hot water at 50°C for 30 minutes",
+      "application": "Pre-planting treatment to eliminate the pathogen from seed material",
+      "frequency": "Every ratoon cycle or when planting new crop",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Antibiotic dip (optional in severe infections)",
+      "brand_examples": ["Streptocycline"],
+      "formulation": "SP (Soluble Powder)",
+      "dosage": "0.1 g per liter of water",
+      "application": "Dip cane setts before planting",
+      "frequency": "Use only under expert advice",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma harzianum",
+      "dosage": "5 kg/ha mixed with FYM or compost",
+      "application": "Apply to soil to enhance microbial balance and suppress pathogens"
+    },
+    {
+      "name": "Neem cake",
+      "dosage": "200–400 kg/ha",
+      "application": "Apply during land preparation to improve soil health and reduce pathogen load"
+    }
+  ],
+  "prevention": [
+    "Use disease-free, certified planting material",
+    "Practice hot water treatment of seed cane before planting",
+    "Avoid ratooning more than two times in affected fields",
+    "Sanitize harvesting tools between fields",
+    "Follow crop rotation and field sanitation practices"
+  ],
+  "safety_tips": [
+    "Wear gloves while handling hot water or chemical treatments",
+    "Maintain proper temperature control during hot water treatment",
+    "Dispose of infected plant material safely to avoid spread",
+    "Keep treatment equipment clean and calibrated"
+  ]
+},
+"sugarcane__ redrot(Colletotrichum falcatum)": {
+  "pathogen": "Colletotrichum falcatum",
+  "symptoms": [
+    "Yellowing and drying of top leaves, progressing downwards",
+    "Red discoloration of the internal tissues with white patches across the length of the split cane",
+    "Foul smell from affected stalks due to tissue decay",
+    "Sporulation (black fungal dots) on the inner surface of the cane",
+    "External canes may appear normal but are soft and hollow inside"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicidal sett treatment (Carbendazim)",
+      "brand_examples": ["Bavistin", "Derosal"],
+      "formulation": "WP",
+      "dosage": "0.1% (1 g per liter of water)",
+      "application": "Dip cane setts for 30 minutes before planting",
+      "frequency": "At planting time; not repeated in field",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Hot air treatment",
+      "brand_examples": [],
+      "formulation": "Physical method",
+      "dosage": "Heat setts at 54°C for 8 hours in a hot air chamber",
+      "application": "Used in seed treatment plants for large-scale control",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride",
+      "dosage": "5 kg mixed with 100 kg FYM/compost per hectare",
+      "application": "Soil application around root zone during early crop stage"
+    },
+    {
+      "name": "Pseudomonas fluorescens",
+      "dosage": "10 g/kg cane setts or 2.5 kg/acre in compost",
+      "application": "Sett treatment and field application for disease suppression"
+    }
+  ],
+  "prevention": [
+    "Use resistant or moderately resistant varieties",
+    "Plant disease-free, healthy setts only",
+    "Destroy infected crop residues and stubbles",
+    "Avoid ratooning from infected fields",
+    "Practice crop rotation with legumes or non-host crops"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask when handling fungicides",
+    "Use properly labeled containers and prepare fresh solutions",
+    "Dispose fungicide waste as per local regulations",
+    "Clean tools and machinery after use to avoid disease spread"
+  ]
+},
+"sugarcane__Grassy Shoot Disease(Phytoplasma)": {
+  "pathogen": "Phytoplasma (Mycoplasma-like organism)",
+  "symptoms": [
+    "Prolific sprouting of auxiliary buds resulting in grassy appearance",
+    "Thin, narrow, pale green shoots with weak growth",
+    "Stunted plants with no millable canes",
+    "Bushy appearance at the base of the plant",
+    "Failure of flowering and poor root development"
+  ],
+  "treatments": [
+    {
+      "name": "Thermal treatment (Hot water therapy)",
+      "brand_examples": [],
+      "formulation": "Physical method",
+      "dosage": "Soak cane setts in hot water at 52°C for 1 hour",
+      "application": "Used before planting to kill phytoplasma in infected setts",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Tetracycline antibiotic (for seed setts only under controlled use)",
+      "brand_examples": ["Biocycline"],
+      "formulation": "SP (Soluble Powder)",
+      "dosage": "250 ppm (approx. 0.25 g/liter of water)",
+      "application": "Dip cane setts for 3–4 hours under expert supervision",
+      "frequency": "Only once for seed treatment",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem cake",
+      "dosage": "200–400 kg per hectare",
+      "application": "Applied during field preparation to suppress vectors and improve soil health"
+    },
+    {
+      "name": "Trichoderma viride with FYM",
+      "dosage": "5 kg/acre mixed with 100 kg well-decomposed FYM",
+      "application": "Applied around the root zone to enhance resistance and improve plant vigor"
+    }
+  ],
+  "prevention": [
+    "Use only disease-free and certified setts",
+    "Follow hot water treatment for seed material",
+    "Control vector insects like leafhoppers using safe insecticides or neem-based sprays",
+    "Rogue out and destroy infected clumps immediately",
+    "Avoid ratooning from infected fields"
+  ],
+  "safety_tips": [
+    "Handle hot water treatment with caution and proper equipment",
+    "Use protective gear when handling antibiotics or insecticides",
+    "Dispose of infected plants far from healthy fields",
+    "Avoid indiscriminate use of antibiotics in open fields"
+  ]
+},
+" sugarcane__Mosaic Disease (Sugarcane Mosaic Virus - SCMV)": {
+  "pathogen": "Sugarcane Mosaic Virus (SCMV)",
+  "symptoms": [
+    "Irregular light and dark green mosaic or mottled patterns on leaves",
+    "Streaking and chlorosis, especially along the midrib",
+    "Reduction in leaf width and cane diameter",
+    "Stunted growth and poor tillering",
+    "Reduced juice quality and cane yield"
+  ],
+  "treatments": [
+    {
+      "name": "Roguing and removal of infected plants",
+      "brand_examples": [],
+      "formulation": "Cultural method",
+      "dosage": "Not applicable",
+      "application": "Remove and destroy infected clumps at early stages",
+      "frequency": "Inspect fields every 15 days for symptoms",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Vector control (aphid management)",
+      "brand_examples": ["Confidor", "Imidacloprid"],
+      "formulation": "SC or WG",
+      "dosage": "0.3 ml/liter of water (Confidor 200 SL)",
+      "application": "Foliar spray to control aphids that spread the virus",
+      "frequency": "Repeat every 15 days during active vector presence",
+      "pre_harvest_interval": "7–14 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil spray (Azadirachtin)",
+      "dosage": "5 ml/liter of water",
+      "application": "Spray on foliage to repel and control aphid vectors"
+    },
+    {
+      "name": "Yellow sticky traps",
+      "dosage": "20–25 traps per acre",
+      "application": "Installed around the field to monitor and reduce aphid populations"
+    }
+  ],
+  "prevention": [
+    "Use virus-free and certified seed material",
+    "Plant resistant or tolerant varieties where available",
+    "Remove infected plants promptly to reduce virus load",
+    "Control aphid vectors through safe insecticides or organic repellents",
+    "Avoid ratooning from infected fields"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask while handling insecticides",
+    "Wash hands and face thoroughly after spraying",
+    "Avoid spraying during windy conditions to reduce drift",
+    "Use recommended dosages to prevent phytotoxicity and resistance"
+  ]
+},
+" sugarcane__smut(formerly Ustilago scitaminea)":{
+  "pathogen": "Sporisorium scitamineum (formerly Ustilago scitaminea)",
+  "symptoms": [
+    "Emergence of a black whip-like structure (smut whip) from the growing point",
+    "Narrow, twisted, and elongated leaves",
+    "Stunted growth and excessive tillering",
+    "Reduced cane girth and internodal length",
+    "Significant reduction in yield and sugar recovery"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicidal sett treatment (e.g., Carbendazim)",
+      "brand_examples": ["Bavistin"],
+      "formulation": "WP (Wettable Powder)",
+      "dosage": "0.1% solution (1 g/liter of water)",
+      "application": "Dip setts for 30 minutes before planting",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Hot water treatment",
+      "brand_examples": [],
+      "formulation": "Physical method",
+      "dosage": "Soak cane setts at 50°C for 30 minutes",
+      "application": "Used before planting to kill smut spores",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride with FYM",
+      "dosage": "5 kg per acre mixed with 100 kg well-decomposed FYM",
+      "application": "Apply around the root zone at the time of planting"
+    },
+    {
+      "name": "Neem cake",
+      "dosage": "200–400 kg per hectare",
+      "application": "Incorporated into soil during field preparation"
+    }
+  ],
+  "prevention": [
+    "Use disease-free and certified seed material",
+    "Avoid ratooning in infected fields",
+    "Plant resistant or tolerant varieties",
+    "Remove and destroy infected clumps immediately",
+    "Practice crop rotation and field sanitation"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask when handling fungicides",
+    "Avoid contact with eyes and skin while dipping setts",
+    "Dispose of infected plant material away from the field",
+    "Follow label instructions for chemical handling and dosage"
+  ]
+},
+"sugarcane__Wilt Disease(Cephalosporium sacchari)": {
+  "pathogen": "Cephalosporium sacchari",
+  "symptoms": [
+    "Gradual yellowing and drying of lower leaves, progressing upwards",
+    "Stunted and weak plants with poor tillering",
+    "Red or brown discoloration in internal tissues of cane",
+    "Poor juice quality and dry, pithy canes",
+    "Wilting and lodging in severe cases"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicidal sett treatment (e.g., Carbendazim)",
+      "brand_examples": ["Bavistin"],
+      "formulation": "WP (Wettable Powder)",
+      "dosage": "1 g per liter of water",
+      "application": "Dip cane setts for 30 minutes before planting",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Soil application of fungicide (Trichoderma-based)",
+      "brand_examples": ["TrichoRich", "Trichoderma viride"],
+      "formulation": "Powder or granules",
+      "dosage": "5 kg per acre mixed with FYM",
+      "application": "Apply to root zone during field preparation",
+      "frequency": "Once or twice depending on disease pressure",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Trichoderma viride with FYM",
+      "dosage": "5 kg/acre with 100 kg well-decomposed FYM",
+      "application": "Applied in furrows or around the root zone"
+    },
+    {
+      "name": "Neem cake",
+      "dosage": "200–400 kg per hectare",
+      "application": "Mixed into soil before planting to suppress soil-borne pathogens"
+    }
+  ],
+  "prevention": [
+    "Use healthy, certified seed setts",
+    "Avoid planting in waterlogged or poorly drained soils",
+    "Practice crop rotation with non-host crops",
+    "Avoid ratooning from infected fields",
+    "Remove and destroy wilted or dried clumps early"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask when handling chemical fungicides",
+    "Ensure proper disposal of infected material",
+    "Avoid over-irrigation to prevent disease spread",
+    "Apply treatments in well-ventilated conditions"
+  ]
+},
+" wheat__ Loose Smut":{
+  "pathogen": "Ustilago tritici",
+  "symptoms": [
+    "Infected plants appear normal until heading stage",
+    "Smutted heads emerge earlier than healthy ones",
+    "Spikelets are replaced by black, powdery spore masses (smut spores)",
+    "Smut spores are dispersed by wind, leaving behind a naked rachis",
+    "Yield loss due to complete destruction of grains in infected spikes"
+  ],
+  "treatments": [
+    {
+      "name": "Seed treatment with systemic fungicides (e.g., Carboxin or Tebuconazole)",
+      "brand_examples": ["Vitavax", "Raxil", "Baytan"],
+      "formulation": "WS (Wettable Suspension)",
+      "dosage": "2–2.5 g per kg of seed",
+      "application": "Treat seeds thoroughly before sowing",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Hot water treatment",
+      "dosage": "Soak seeds in cold water for 4 hours, then in hot water at 52°C for 10 minutes",
+      "application": "Done before sowing to kill internal smut spores"
+    },
+    {
+      "name": "Trichoderma-based bioformulations",
+      "dosage": "10 g/kg seed",
+      "application": "Seed dressing to improve resistance and reduce pathogen load"
+    }
+  ],
+  "prevention": [
+    "Use certified, disease-free seeds",
+    "Avoid using saved seeds from smutted crops",
+    "Adopt crop rotation with non-host crops",
+    "Destroy smutted ears before spore dispersal",
+    "Timely seed treatment with recommended fungicides"
+  ],
+  "safety_tips": [
+    "Use gloves and mask while treating seeds with fungicides",
+    "Do not use treated seeds for human or animal consumption",
+    "Handle hot water treatments carefully to avoid scalding"
+  ]
+},
+"wheat__Barley Yellow Dwarf Virus (BYDV)":{
+  "pathogen": "Barley Yellow Dwarf Virus (BYDV)",
+  "symptoms": [
+    "Yellowing or reddening of leaf tips, progressing downward",
+    "Stunted plant growth with fewer tillers",
+    "Erect, stiff leaves with purple or yellow margins",
+    "Delayed heading and poor grain fill",
+    "Reduced yield and shriveled grains"
+  ],
+  "treatments": [
+    {
+      "name": "Insecticide treatment to control aphid vectors (e.g., Imidacloprid)",
+      "brand_examples": ["Confidor", "Admire", "Gaucho"],
+      "formulation": "FS (Flowable concentrate for seed treatment)",
+      "dosage": "5 ml per kg of seed",
+      "application": "Seed treatment before sowing",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    },
+    {
+      "name": "Foliar insecticide spray during aphid infestation (e.g., Thiamethoxam)",
+      "brand_examples": ["Actara", "Cruiser"],
+      "formulation": "WG (Water Dispersible Granule)",
+      "dosage": "0.3 g/liter of water",
+      "application": "Spray at early aphid detection stage",
+      "frequency": "Repeat every 10–15 days if infestation persists",
+      "pre_harvest_interval": "7–10 days"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil spray",
+      "dosage": "5 ml/liter of water",
+      "application": "Spray during early signs of aphid activity to deter vectors"
+    },
+    {
+      "name": "Yellow sticky traps",
+      "dosage": "20–25 traps per hectare",
+      "application": "Place in field to monitor and trap aphid vectors"
+    }
+  ],
+  "prevention": [
+    "Use virus-free certified seeds",
+    "Avoid early sowing when aphid population is high",
+    "Control aphid vectors early in the crop cycle",
+    "Remove weed hosts that harbor virus and aphids",
+    "Grow tolerant or resistant wheat varieties where available"
+  ],
+  "safety_tips": [
+    "Wear protective clothing and gloves when spraying chemicals",
+    "Avoid spraying during windy conditions",
+    "Dispose of pesticide containers safely",
+    "Wash hands and clothes thoroughly after handling chemicals"
+  ]
+},
+"wheat__Common Bunt (Stinking Smut)":{
+  "pathogen": "Tilletia caries and Tilletia foetida",
+  "symptoms": [
+    "Infected plants appear normal until heading",
+    "Grains are replaced by bunt balls filled with black, foul-smelling spores",
+    "Bunt balls rupture during harvest, contaminating healthy grains",
+    "Infected spikes may be slightly darker and have a fishy odor",
+    "Reduces grain quality and marketability"
+  ],
+  "treatments": [
+    {
+      "name": "Seed treatment with systemic fungicides (e.g., Carboxin or Tebuconazole)",
+      "brand_examples": ["Vitavax", "Raxil", "Baytan"],
+      "formulation": "WS (Wettable Suspension)",
+      "dosage": "2.0–2.5 g per kg of seed",
+      "application": "Treat seeds uniformly before sowing",
+      "frequency": "Once before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Hot water seed treatment",
+      "dosage": "Soak seeds in cold water for 4 hours, then immerse in hot water at 52°C for 10 minutes",
+      "application": "Done before sowing to kill bunt spores on seed surface"
+    },
+    {
+      "name": "Trichoderma viride seed dressing",
+      "dosage": "10 g per kg of seed",
+      "application": "Coat seeds thoroughly to suppress fungal pathogens"
+    }
+  ],
+  "prevention": [
+    "Use certified and disease-free seed",
+    "Treat seeds before sowing with recommended fungicides or bioagents",
+    "Avoid planting in fields with history of bunt without rotation",
+    "Ensure proper drying and storage of seeds to prevent contamination",
+    "Practice crop rotation with non-cereal crops"
+  ],
+  "safety_tips": [
+    "Wear gloves and mask during seed treatment",
+    "Avoid inhaling spore-laden dust from bunt-infected grains",
+    "Clean equipment thoroughly after use in infected fields",
+    "Do not use infected grains for human or animal consumption"
+  ]
+},
+"wheat__Powdery Mildew":{
+  "pathogen": "Blumeria graminis f. sp. tritici",
+  "symptoms": [
+    "White, powdery fungal growth appears on leaf surfaces, stems, and heads",
+    "Infected areas turn yellow and then brown as tissue dies",
+    "Heavy infection leads to leaf curling, reduced photosynthesis, and stunted growth",
+    "Lower grain yield and quality in severe cases"
+  ],
+  "treatments": [
+    {
+      "name": "Systemic fungicides (e.g., Propiconazole, Tebuconazole)",
+      "brand_examples": ["Tilt", "Folicur", "Score"],
+      "formulation": "EC or SC",
+      "dosage": "1 ml per liter of water",
+      "application": "Spray thoroughly at first sign of disease",
+      "frequency": "Repeat at 10–14 day intervals if disease persists",
+      "pre_harvest_interval": "20–30 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Sulfur-based fungicides",
+      "dosage": "2–3 g per liter of water",
+      "application": "Apply as foliar spray early in disease development"
+    },
+    {
+      "name": "Baking soda solution (sodium bicarbonate)",
+      "dosage": "5 g per liter of water with a few drops of soap",
+      "application": "Spray weekly as a preventive or at early signs"
+    }
+  ],
+  "prevention": [
+    "Grow resistant wheat varieties suitable to the region",
+    "Avoid excessive use of nitrogen fertilizers",
+    "Ensure proper field spacing and air circulation",
+    "Destroy crop debris and volunteer plants after harvest",
+    "Rotate crops with non-hosts like legumes"
+  ],
+  "safety_tips": [
+    "Use personal protective equipment while spraying chemicals",
+    "Wash hands and face after handling fungicides",
+    "Keep children and livestock away during and after application",
+    "Do not exceed recommended dosage to avoid phytotoxicity"
+  ]
+},
+"wheat__Rust Diseases (most significant globally)":{
+  "pathogen": "Puccinia spp. (Puccinia triticina - Leaf Rust, Puccinia graminis f. sp. tritici - Stem Rust, Puccinia striiformis f. sp. tritici - Stripe Rust)",
+  "symptoms": [
+    "Leaf Rust: Small, round, orange-red pustules mainly on leaves",
+    "Stem Rust: Large, elongated reddish-brown pustules on stems, leaves, and leaf sheaths",
+    "Stripe Rust: Yellowish, elongated pustules forming stripes on leaves and leaf sheaths",
+    "All types cause early leaf drying, reduced photosynthesis, and grain shriveling",
+    "Severe infections lead to significant yield and quality loss"
+  ],
+  "treatments": [
+    {
+      "name": "Systemic fungicides (e.g., Propiconazole, Tebuconazole, Triadimefon)",
+      "brand_examples": ["Tilt", "Folicur", "Bayleton"],
+      "formulation": "EC or SC",
+      "dosage": "1–1.5 ml per liter of water",
+      "application": "Spray at disease onset or during early growth stages",
+      "frequency": "Repeat after 10–15 days if conditions are favorable for disease",
+      "pre_harvest_interval": "20–30 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil or extract",
+      "dosage": "5 ml per liter of water",
+      "application": "Use as a preventive foliar spray during early crop stages"
+    },
+    {
+      "name": "Cow dung and cow urine-based sprays (Panchagavya)",
+      "dosage": "3%–5% solution",
+      "application": "Apply at early stages to promote plant immunity"
+    }
+  ],
+  "prevention": [
+    "Grow rust-resistant wheat varieties suited for the local area",
+    "Timely sowing to avoid peak infection periods",
+    "Monitor crops regularly for early symptoms",
+    "Avoid excessive irrigation and nitrogen application",
+    "Practice crop rotation and remove volunteer wheat plants"
+  ],
+  "safety_tips": [
+    "Wear protective clothing and mask while spraying fungicides",
+    "Avoid entering fields for 24 hours after application",
+    "Keep fungicides away from children and food",
+    "Follow label instructions for dosage and safety guidelines"
+  ]
+},
+"wheat__Wheat Streak Mosaic Virus (WSMV)":{
+  "pathogen": "Wheat streak mosaic virus (WSMV), transmitted by wheat curl mite (Aceria tosichella)",
+  "symptoms": [
+    "Yellow streaks and mosaic patterns on leaves",
+    "Stunted plant growth and reduced tillering",
+    "Delayed heading and poor grain filling",
+    "Symptoms often more severe in warmer temperatures",
+    "Yield losses can be significant if infection occurs early"
+  ],
+  "treatments": [
+    {
+      "name": "No direct chemical treatment for WSMV",
+      "brand_examples": [],
+      "formulation": "Not applicable",
+      "dosage": "Not applicable",
+      "application": "Focus is on vector control and cultural practices",
+      "frequency": "Implement before and during the crop season",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil (for mite vector suppression)",
+      "dosage": "5 ml per liter of water",
+      "application": "Foliar spray to deter wheat curl mites early in the season"
+    },
+    {
+      "name": "Garlic-chili spray",
+      "dosage": "Fermented extract used in 5% solution",
+      "application": "Repels mites and enhances plant immunity"
+    }
+  ],
+  "prevention": [
+    "Plant resistant wheat varieties if available",
+    "Control volunteer wheat and grassy weeds (green bridge hosts)",
+    "Delay planting to avoid peak vector activity",
+    "Avoid planting near infected fields",
+    "Maintain field hygiene and monitor mite populations"
+  ],
+  "safety_tips": [
+    "Use protective gloves and mask when applying any organic or chemical sprays",
+    "Ensure proper disposal of infected plant material",
+    "Wash hands thoroughly after handling plants showing symptoms"
+  ]
+},
+"onion__Downy Mildew (Peronospora destructor)":{
+  "pathogen": "Peronospora destructor",
+  "symptoms": [
+    "Pale green to yellowish spots on older leaves",
+    "Grayish-violet fuzzy fungal growth on the leaf surface during humid conditions",
+    "Leaves collapse and die prematurely",
+    "Bulb size and quality are significantly reduced",
+    "Infected plants may become more prone to secondary infections"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicides (e.g., Metalaxyl + Mancozeb)",
+      "brand_examples": ["Ridomil Gold", "Revus", "Mancozeb-based brands"],
+      "formulation": "WP or WG",
+      "dosage": "2–3 g per liter of water",
+      "application": "Spray thoroughly on foliage during early signs of disease",
+      "frequency": "Every 7–10 days during high humidity or wet conditions",
+      "pre_harvest_interval": "7–14 days depending on the product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil",
+      "dosage": "5 ml per liter of water",
+      "application": "Spray early in the morning or late evening to reduce humidity and suppress pathogen growth"
+    },
+    {
+      "name": "Garlic extract",
+      "dosage": "5% solution",
+      "application": "Used as foliar spray to inhibit fungal spore germination"
+    }
+  ],
+  "prevention": [
+    "Use disease-free seeds or seedlings",
+    "Provide adequate spacing for air circulation",
+    "Avoid overhead irrigation especially in the evening",
+    "Remove and destroy infected leaves and debris",
+    "Practice crop rotation with non-host crops"
+  ],
+  "safety_tips": [
+    "Wear protective gloves, goggles, and a mask during application",
+    "Avoid entering the field until spray has dried",
+    "Wash hands and clothes after handling fungicides",
+    "Do not harvest onions immediately after fungicide application"
+  ]
+},
+"onion__Onion Smut (Urocystis cepulae)":{
+  "pathogen": "Urocystis cepulae",
+  "symptoms": [
+    "Black, elongated lesions on cotyledons and first true leaves",
+    "Dark smutty streaks or swellings at the base of seedlings",
+    "Distorted and stunted seedling growth",
+    "In severe infections, seedlings may die before emerging",
+    "Older plants may develop secondary infections and fail to bulb properly"
+  ],
+  "treatments": [
+    {
+      "name": "Seed treatment with fungicides (e.g., Thiram or Captan)",
+      "brand_examples": ["Thiram 75WP", "Captan 50WP"],
+      "formulation": "WP (Wettable Powder)",
+      "dosage": "2–3 g per kg of seed",
+      "application": "Coat seeds evenly before sowing",
+      "frequency": "Single treatment before planting",
+      "pre_harvest_interval": "Not applicable"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Hot water seed treatment",
+      "dosage": "Soak seeds at 50°C for 20 minutes",
+      "application": "Prevents initial infection from seedborne smut spores"
+    },
+    {
+      "name": "Trichoderma viride",
+      "dosage": "4 g/kg of seed",
+      "application": "Seed biopriming before sowing to suppress pathogen"
+    }
+  ],
+  "prevention": [
+    "Use certified disease-free seed",
+    "Practice 3–4 year crop rotation with non-host crops",
+    "Avoid planting in fields with history of onion smut",
+    "Treat soil with compost and biocontrol agents to reduce pathogen load",
+    "Maintain optimal soil conditions for seedling growth"
+  ],
+  "safety_tips": [
+    "Use gloves and mask when handling seed treatments",
+    "Store treated seed separately and label properly",
+    "Dispose of infected seedlings away from the field",
+    "Wash hands thoroughly after handling seeds or soil"
+  ]
+},
+"onion__Bacterial Soft Rot (Pectobacterium spp. and Dickeya spp.)":{
+  "pathogen": "Pectobacterium spp. and Dickeya spp.",
+  "symptoms": [
+    "Soft, watery decay at the base of the bulb and neck",
+    "Foul-smelling, mushy tissue that collapses easily",
+    "Yellowing and wilting of leaves in advanced stages",
+    "Bulbs may show translucent, glassy appearance",
+    "Rapid spread during warm and humid conditions"
+  ],
+  "treatments": [
+    {
+      "name": "Copper-based bactericides",
+      "brand_examples": ["Kocide", "Nordox", "Cuprofix"],
+      "formulation": "WP or SC",
+      "dosage": "2–3 g or ml per liter of water",
+      "application": "Spray on leaves and neck area of the plant",
+      "frequency": "Apply every 7–10 days during high humidity",
+      "pre_harvest_interval": "0–5 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil spray",
+      "dosage": "3–5 ml per liter of water",
+      "application": "Spray preventively during early growth stages"
+    },
+    {
+      "name": "Bacillus subtilis-based bioformulations",
+      "dosage": "As per label recommendation",
+      "application": "Apply as foliar spray to suppress bacterial growth"
+    }
+  ],
+  "prevention": [
+    "Use well-drained soils and avoid over-irrigation",
+    "Harvest only during dry weather and cure bulbs properly",
+    "Handle bulbs carefully to avoid bruising and injuries",
+    "Store bulbs in cool, dry, and well-ventilated conditions",
+    "Avoid excessive nitrogen fertilization"
+  ],
+  "safety_tips": [
+    "Wear gloves and eye protection when spraying chemicals",
+    "Do not consume rotting or suspect bulbs",
+    "Wash hands and equipment after fieldwork",
+    "Ensure proper disposal of infected plant debris"
+  ]
+},
+"onion__Stemphylium Leaf Blight (Stemphylium vesicarium)":{
+  "pathogen": "Stemphylium vesicarium",
+  "symptoms": [
+    "Small, water-soaked lesions on older leaves that turn brown and elongate",
+    "Lesions coalesce, causing extensive leaf blighting and collapse",
+    "Premature leaf death leading to reduced bulb size and yield",
+    "Dark brown to black sporulation seen on dead tissues under humid conditions"
+  ],
+  "treatments": [
+    {
+      "name": "Fungicide spray with Mancozeb or Azoxystrobin",
+      "brand_examples": ["Dithane M-45", "Amistar"],
+      "formulation": "WP or SC",
+      "dosage": "2–2.5 g or ml per liter of water",
+      "application": "Spray uniformly over foliage at the first sign of disease",
+      "frequency": "Repeat every 10–14 days during high humidity",
+      "pre_harvest_interval": "7–14 days depending on product"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Neem oil spray",
+      "dosage": "5 ml per liter of water",
+      "application": "Apply as preventive foliar spray during early growth"
+    },
+    {
+      "name": "Trichoderma harzianum",
+      "dosage": "5 kg/acre mixed with compost or FYM",
+      "application": "Apply near root zone to suppress pathogen build-up"
+    }
+  ],
+  "prevention": [
+    "Avoid overhead irrigation to minimize leaf wetness",
+    "Ensure good air circulation by proper plant spacing",
+    "Remove and destroy infected leaves and plant debris",
+    "Practice crop rotation with non-host crops",
+    "Apply fungicides preventively during wet and humid periods"
+  ],
+  "safety_tips": [
+    "Wear protective clothing and masks when spraying chemicals",
+    "Wash hands and equipment after use",
+    "Do not re-enter sprayed areas until spray has dried",
+    "Store fungicides away from food and children"
+  ]
+},
+"onion__Black Mold (Aspergillus niger)":{
+  "pathogen": "Aspergillus niger",
+  "symptoms": [
+    "Black, powdery fungal growth on the surface of bulbs, especially around the neck and injured areas",
+    "Softening and decay of outer bulb scales",
+    "Unpleasant odor and shrinkage of affected bulbs",
+    "Most common in stored onions or during transit under warm and humid conditions"
+  ],
+  "treatments": [
+    {
+      "name": "Post-harvest fungicide treatment with Thiabendazole",
+      "brand_examples": ["Mertect"],
+      "formulation": "SC",
+      "dosage": "As per label (commonly 0.5–1 ml per liter of water)",
+      "application": "Dip or spray bulbs before storage",
+      "frequency": "Single application post-harvest",
+      "pre_harvest_interval": "Not applicable (used after harvest)"
+    }
+  ],
+  "organic_alternatives": [
+    {
+      "name": "Clove or cinnamon essential oil",
+      "dosage": "0.5–1% solution",
+      "application": "Spray or dip bulbs before storage to reduce fungal load"
+    },
+    {
+      "name": "Neem leaf extract",
+      "dosage": "10% solution",
+      "application": "Spray during pre-harvest and bulb curing"
+    }
+  ],
+  "prevention": [
+    "Cure bulbs properly before storage (drying at 30–35°C for 10–15 days)",
+    "Avoid bruising and mechanical injuries during harvest and handling",
+    "Store onions in cool, dry, and well-ventilated areas",
+    "Use clean containers and storage bins",
+    "Harvest at full maturity to reduce susceptibility"
+  ],
+  "safety_tips": [
+    "Avoid consuming visibly moldy onions",
+    "Handle fungicides and oils with gloves and protective eyewear",
+    "Ensure treated bulbs are clearly marked for storage use only",
+    "Wash hands thoroughly after treatment applications"
+  ]
+}
+}
