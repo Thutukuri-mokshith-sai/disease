@@ -12,7 +12,7 @@ from PIL import Image
 img_height, img_width = 128, 128
 model_path = "plant_disease_model.h5"  # Ensure this path is correct
 label_map_path = "label_map.json"  # Ensure this path is correct
-disease_info_path = "E:/disease.json"  # Ensure this path is correct
+disease_info_path = "disease.json"  # Ensure this path is correct
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -59,7 +59,6 @@ def predict():
     })
 
 # Run the Flask server
-# Run the server
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 9000))  # Changed from 5000 to 9000
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 9000))  # Railway sets the PORT dynamically
+    app.run(host='0.0.0.0', port=port)  # Listen on all interfaces
