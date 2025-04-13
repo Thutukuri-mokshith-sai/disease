@@ -89,5 +89,4 @@ def predict():
 
 # Run the Flask server
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 9000))  # Changed from 5000 to 9000
-    app.run(host='0.0.0.0', port=port, debug=True)  # Enable debug mode
+    app.run(debug=True)  # Enable debug mode
