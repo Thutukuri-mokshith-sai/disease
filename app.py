@@ -3,15 +3,14 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import numpy as np
 import json
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
-from tensorflow.keras.models import load_model
+import tensorflow as tf
 import os
 import io
 from PIL import Image
 
 # Configurations
 img_height, img_width = 128, 128
-model_path = "plant_disease_model.h5"  # Ensure this path is correct
+model_path = "plant_disease_model.tflite"  # Ensure this path is correct
 label_map_path = "label_map.json"  # Ensure this path is correct
 disease_info_path = "disease.json"  # Ensure this path is correct
 
@@ -23,9 +22,11 @@ CORS(app)  # Enable CORS for cross-origin requests
 logging.basicConfig(level=logging.DEBUG)
 app.logger.setLevel(logging.DEBUG)
 
-# Load the machine learning model
+# Load the TensorFlow Lite model
 try:
-    model = load_model(model_path)
+    # Load TensorFlow Lite model
+    interpreter = tf.lite.Interpreter(model_path=model_path)
+    interpreter.allocate_tensors()
     app.logger.info(f"Model loaded from {model_path}")
 except Exception as e:
     app.logger.error(f"Error loading model: {e}")
@@ -63,13 +64,24 @@ def predict():
 
     try:
         # Load image and prepare it for prediction
-        image = load_img(io.BytesIO(image_bytes), target_size=(img_height, img_width))
-        img_array = img_to_array(image) / 255.0  # Normalize image
-        img_array = np.expand_dims(img_array, axis=0)
+        image = Image.open(io.BytesIO(image_bytes))
+        image = image.resize((img_width, img_height))  # Resize image
+        img_array = np.array(image) / 255.0  # Normalize image
+        img_array = np.expand_dims(img_array, axis=0).astype(np.float32)  # Add batch dimension and convert to float32
 
-        # Make prediction
-        prediction = model.predict(img_array)
-        predicted_index = int(np.argmax(prediction))
+        # Set the input tensor
+        input_details = interpreter.get_input_details()
+        output_details = interpreter.get_output_details()
+
+        interpreter.set_tensor(input_details[0]['index'], img_array)
+
+        # Run the inference
+        interpreter.invoke()
+
+        # Get prediction results
+        output_data = interpreter.get_tensor(output_details[0]['index'])
+        predicted_index = int(np.argmax(output_data))
+
         predicted_label = label_map.get(predicted_index, "Unknown")
         
         app.logger.debug(f'Prediction: {predicted_label}')
