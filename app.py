@@ -30,9 +30,16 @@ except FileNotFoundError:
 except json.JSONDecodeError:
     print("Error: Failed to decode 'disease.json'. Please check the file format.")
     data = {}
-
-# Extract all disease names
+# Extract all disease names and create a map of disease names to full keys (e.g., "Apple Apple scab")
 disease_keys = list(data.keys())
+disease_names_map = {}
+
+for key in disease_keys:
+    # Ensure that the key has a space before attempting to split it
+    if " " in key:
+        disease_names_map[key.split(" ", 1)[1].lower()] = key
+    else:
+        disease_names_map[key.lower()] = key
 
 # Crop diseases dictionary
 diseases_of_crops = {
@@ -81,19 +88,17 @@ def get_diseases_by_crop(crop_name):
 # Function to find the disease by symptoms using SpaCy
 def find_disease(user_input):
     user_input = user_input.lower()
-    
-    # Use SpaCy to process the input and extract entities
-    doc = nlp(user_input)
-    
-    # Combine tokens into a string for better fuzzy matching
-    tokens = ",".join([token.text for token in doc])
-    
-    # Find the closest disease match based on the processed input
-    identified_disease = find_best_match(tokens, disease_keys)
-    
-    return identified_disease
 
-# Main chatbot response logic
+    # Use SpaCy to extract possible disease phrases
+    doc = nlp(user_input)
+    tokens = ",".join([token.text for token in doc])
+
+    # Try fuzzy match on disease name only (without crop)
+    match = find_best_match(tokens, disease_names_map.keys())
+    if match:
+        return disease_names_map[match]  # return the full key like "Apple Apple scab"
+
+    return None
 def get_answer(user_input):
     global current_disease, current_crop
     user_input = user_input.lower()
@@ -103,20 +108,22 @@ def get_answer(user_input):
     if any(greet in user_input for greet in greetings):
         return "Welcome! How can I assist you with crop diseases?"
 
-    # Check for crop-related disease queries (e.g., "tomato diseases")
+    # Check for crop-related queries like "tomato diseases"
     if "disease" in user_input or "diseases" in user_input:
         for crop in diseases_of_crops:
-            if crop.lower() in user_input:  # Check if crop name appears in the user input
+            if crop.lower() in user_input:
                 current_crop = crop.lower()
+                current_disease = None  # reset disease when crop changes
                 return get_diseases_by_crop(crop)
 
-    # If user mentions a specific disease
-    identified_disease = find_disease(user_input)
-    if identified_disease:
-        current_disease = identified_disease
-        return f"You're referring to {current_disease}. What would you like to know about it? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
+    # Try to identify disease name only if none is selected yet
+    if current_disease is None:
+        identified_disease = find_disease(user_input)
+        if identified_disease:
+            current_disease = identified_disease
+            return f"You're referring to {current_disease}. What would you like to know about it? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
 
-    # If symptoms are mentioned and a disease is already identified
+    # If follow-up question like "symptoms" is asked
     if current_disease:
         disease_info = data.get(current_disease, {})
 
@@ -131,7 +138,7 @@ def get_answer(user_input):
 
         elif "pathogen" in user_input:
             return f"Pathogen: {disease_info.get('pathogen', 'Unknown')}"
-        
+
         elif "organic" in user_input:
             organic = disease_info.get("organic_alternatives", [])
             if organic:
@@ -156,11 +163,10 @@ def get_answer(user_input):
                 response += "No treatment info available."
             return response
         else:
-            return f"You're referring to {current_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
+            return f"What would you like to know about {current_disease}? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
 
-    # If no disease is identified, ask the user to specify symptoms or a disease name
-    return "Please provide a disease name or describe the symptoms."
-
+    # If user only gave symptoms or vague text without a known disease
+    return "Please provide a disease name or describe the symptoms or crop to get started."
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -176,8 +182,7 @@ def chat():
     except BadRequest as e:
         return jsonify({"error": str(e)}), 400
     except Exception as e:
-        return jsonify({"error": "An error occurred: " + str(e)}), 500
-# Preprocess image
+        return jsonify({"error": "An error occurred: " + str(e)}), 500# Preprocess image
 def preprocess_image(img_data, target_size=(224, 224)):
     img = Image.open(io.BytesIO(img_data))
     img = img.resize(target_size)
