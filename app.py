@@ -9,140 +9,174 @@ import nltk
 import spacy
 from difflib import get_close_matches
 import logging
-
+from werkzeug.exceptions import BadRequest
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
 
-# Download necessary NLTK data
+# Download NLTK data if not already present
 nltk.download('punkt')
 
 # Load SpaCy model
 nlp = spacy.load("en_core_web_sm")
 
-# Load disease dataset
-with open('disease.json', 'r') as f:
-    data = json.load(f)
+# Load disease dataset with error handling
+try:
+    with open('disease.json', 'r') as f:
+        data = json.load(f)
+except FileNotFoundError:
+    print("Error: 'disease.json' file not found.")
+    data = {}
+except json.JSONDecodeError:
+    print("Error: Failed to decode 'disease.json'. Please check the file format.")
+    data = {}
 
 # Extract all disease names
 disease_keys = list(data.keys())
 
-# Greetings set
-greetings = {"hi", "hello", "hey", "greetings", "good morning", "good evening", "howdy"}
+# Crop diseases dictionary
+diseases_of_crops = {
+    "Apple": ["Apple scab", "Black rot", "Cedar apple rust", "healthy"],
+    "Banana": ["Cordana", "Panama Disease", "Healthy", "Yellow and Black Sigatoka"],
+    "Beans": ["angular leaf spot", "bean rust", "healthy"],
+    "Corn (maize)": ["Common rust", "Northern Leaf Blight", "healthy"],
+    "Orange": ["Citrus Canker Diseases Leaf", "Citrus Nutrient Deficiency Yellow Leaf", "Healthy Leaf", "Multiple Diseases Leaf", "Young Healthy Leaf"],
+    "Potato": ["Early blight", "Late blight", "healthy"],
+    "Tomato": ["Bacterial spot", "Early blight", "Late blight", "Leaf Mold", "Septoria leaf spot", "Spider mites Two spotted spider mite", "Target Spot", "Yellow Leaf Curl Virus", "healthy", "mosaic virus"],
+    "banana": ["Healthy", "Yellow and Black Sigatoka"],
+    "brinjal": ["Healthy Leaf", "Insect Pest Disease", "Leaf Spot Disease", "Mosaic Virus Disease", "Small Leaf Disease", "White Mold Disease", "Wilt Disease"],
+    "chilli": ["healthy", "leaf curl", "leaf spot", "whitefly", "yellowish"],
+    "cotton": ["bacterial blight", "curl virus", "fussarium wilt", "healthy"],
+    "guava": ["Canker", "Dot", "Healthy", "Mummification", "Rust"],
+    "mango": ["Anthracnose", "Bacterial Canker", "Cutting Weevil", "Die Back", "Gall Midge", "Healthy", "Powdery Mildew", "Sooty Mould"],
+    "paddy": ["bacterial_leaf_blight", "brown_spot", "healthy", "leaf_blast", "leaf_scald", "narrow_brown_spot"],
+    "soyabean": ["Mossaic Virus", "Southern blight", "Sudden Death Syndrone", "Yellow Mosaic", "bacterial blight", "brown spot", "crestamento", "ferrugen", "powdery mildew", "septoria"],
+    "sugarcane": ["Healthy", "Mosaic", "RedRot", "Rust", "Yellow"],
+    "watermelon": ["anthracnose", "downy mildew", "healthy", "mosaic virus"]
+}
 
-# Global state
+# Global state to track current disease
 current_disease = None
+current_crop = None
 
-# Utility function to find best match for disease name
+# Utility: best match for disease name using fuzzy matching
 def find_best_match(user_input, keys):
     matches = get_close_matches(user_input, keys, n=1, cutoff=0.4)
     return matches[0] if matches else None
+
+# Get diseases by crop
 def get_diseases_by_crop(crop_name):
     crop_name = crop_name.lower()
-    matched_diseases = [disease for disease in disease_keys if disease.lower().startswith(crop_name)]
-    if matched_diseases:
+    
+    # Check if the crop exists in the diseases_of_crops dictionary
+    if crop_name.capitalize() in diseases_of_crops:
+        diseases = diseases_of_crops[crop_name.capitalize()]
         response = f"Here are the diseases found in {crop_name.capitalize()}:\n"
-        response += "\n".join(matched_diseases)
+        response += "\n".join(diseases)
         response += "\n\nYou can ask for more info about any specific disease."
     else:
         response = f"No diseases found for the crop '{crop_name}'. Please check the name or ask about another crop."
     return response
 
-# Find disease by symptoms
-def find_disease_by_symptom(user_input):
-    user_tokens = set(nltk.word_tokenize(user_input.lower()))
-    max_overlap = 0
-    best_match = None
+# Function to find the disease by symptoms using SpaCy
+def find_disease(user_input):
+    user_input = user_input.lower()
+    
+    # Use SpaCy to process the input and extract entities
+    doc = nlp(user_input)
+    
+    # Combine tokens into a string for better fuzzy matching
+    tokens = ",".join([token.text for token in doc])
+    
+    # Find the closest disease match based on the processed input
+    identified_disease = find_best_match(tokens, disease_keys)
+    
+    return identified_disease
 
-    for disease, details in data.items():
-        for symptom in details.get("symptoms", []):
-            symptom_tokens = set(nltk.word_tokenize(symptom.lower()))
-            overlap = len(user_tokens & symptom_tokens)
-            if overlap > max_overlap:
-                max_overlap = overlap
-                best_match = disease
-
-    return best_match if max_overlap > 0 else None
-
-# Chat logic
+# Main chatbot response logic
 def get_answer(user_input):
-    global current_disease
+    global current_disease, current_crop
     user_input = user_input.lower()
 
     # Greeting
+    greetings = {"hi", "hello", "hey", "greetings", "good morning", "good evening", "howdy"}
     if any(greet in user_input for greet in greetings):
         return "Welcome! How can I assist you with crop diseases?"
 
-    # Build a crop-to-disease map
-    crop_to_diseases = {}
-    for disease_name in disease_keys:
-        crop_name = disease_name.split()[0].lower()
-        crop_to_diseases.setdefault(crop_name, []).append(disease_name)
-# Check if user asked about diseases of a crop (e.g. "tomato diseases")
+    # Check for crop-related disease queries (e.g., "tomato diseases")
     if "disease" in user_input or "diseases" in user_input:
-        for crop in set([d.split()[0].lower() for d in disease_keys]):
-            if crop in user_input:
+        for crop in diseases_of_crops:
+            if crop.lower() in user_input:  # Check if crop name appears in the user input
+                current_crop = crop.lower()
                 return get_diseases_by_crop(crop)
 
-    # Identify the disease
-    identified_disease = find_best_match(user_input, disease_keys)
-    if not identified_disease:
-        identified_disease = find_disease_by_symptom(user_input)
-
+    # If user mentions a specific disease
+    identified_disease = find_disease(user_input)
     if identified_disease:
         current_disease = identified_disease
-    elif not current_disease:
-        return "Please provide a disease name or describe the symptoms."
+        return f"You're referring to {current_disease}. What would you like to know about it? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
 
-    disease_info = data.get(current_disease, {})
+    # If symptoms are mentioned and a disease is already identified
+    if current_disease:
+        disease_info = data.get(current_disease, {})
 
-    # Respond based on user's intent
-    if "symptom" in user_input:
-        return "\n".join(disease_info.get("symptoms", ["No symptom data available."]))
+        if "symptom" in user_input:
+            return "\n".join(disease_info.get("symptoms", ["No symptom data available."]))
 
-    elif "treatment" in user_input:
-        treatments = disease_info.get("treatments", [])
-        if treatments:
-            return "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
-        return "No treatment data available."
+        elif "treatment" in user_input:
+            treatments = disease_info.get("treatments", [])
+            if treatments:
+                return "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
+            return "No treatment data available."
 
-    elif "pathogen" in user_input:
-        return f"Pathogen: {disease_info.get('pathogen', 'Unknown')}"
+        elif "pathogen" in user_input:
+            return f"Pathogen: {disease_info.get('pathogen', 'Unknown')}"
+        
+        elif "organic" in user_input:
+            organic = disease_info.get("organic_alternatives", [])
+            if organic:
+                return "\n\n".join([f"Name: {o['name']}\nDosage: {o['dosage']}\nApplication: {o['application']}" for o in organic])
+            return "No organic alternatives available."
 
-    elif "organic" in user_input:
-        organic = disease_info.get("organic_alternatives", [])
-        if organic:
-            return "\n\n".join([f"Name: {o['name']}\nDosage: {o['dosage']}\nApplication: {o['application']}" for o in organic])
-        return "No organic alternatives available."
+        elif "prevention" in user_input:
+            return "\n".join(disease_info.get("prevention", ["No prevention data available."]))
 
-    elif "prevention" in user_input:
-        return "\n".join(disease_info.get("prevention", ["No prevention data available."]))
+        elif "safety" in user_input:
+            return "\n".join(disease_info.get("safety_tips", ["No safety tips available."]))
 
-    elif "safety" in user_input:
-        return "\n".join(disease_info.get("safety_tips", ["No safety tips available."]))
-
-    elif any(word in user_input for word in ["details", "info", "information", "about", "describe"]):
-        response = f"Information about {current_disease}:\n\n"
-        response += "Symptoms:\n" + "\n".join(disease_info.get("symptoms", [])) + "\n\n"
-        response += "Prevention:\n" + "\n".join(disease_info.get("prevention", [])) + "\n\n"
-        response += "Treatments:\n"
-        treatments = disease_info.get("treatments", [])
-        if treatments:
-            response += "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
+        elif any(word in user_input for word in ["details", "info", "information", "about", "describe"]):
+            response = f"Information about {current_disease}:\n\n"
+            response += "Symptoms:\n" + "\n".join(disease_info.get("symptoms", [])) + "\n\n"
+            response += "Prevention:\n" + "\n".join(disease_info.get("prevention", [])) + "\n\n"
+            response += "Treatments:\n"
+            treatments = disease_info.get("treatments", [])
+            if treatments:
+                response += "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
+            else:
+                response += "No treatment info available."
+            return response
         else:
-            response += "No treatment info available."
-        return response
+            return f"You're referring to {current_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
 
-    else:
-        return f"You're referring to {current_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
+    # If no disease is identified, ask the user to specify symptoms or a disease name
+    return "Please provide a disease name or describe the symptoms."
 
-# Chat endpoint
+
 @app.route('/chat', methods=['POST'])
 def chat():
-    user_input = request.json.get('message', '')
-    response = get_answer(user_input)
-    return jsonify({"response": response})
+    try:
+        # Input validation
+        user_input = request.json.get('message', '').strip()
+        if not user_input:
+            raise BadRequest("No message provided.")
+        
+        response = get_answer(user_input)
+        return jsonify({"response": response})
 
+    except BadRequest as e:
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:
+        return jsonify({"error": "An error occurred: " + str(e)}), 500
 # Preprocess image
 def preprocess_image(img_data, target_size=(224, 224)):
     img = Image.open(io.BytesIO(img_data))
