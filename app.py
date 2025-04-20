@@ -60,10 +60,7 @@ def find_disease_by_symptom(user_input):
                 best_match = disease
 
     return best_match if max_overlap > 0 else None
-
-# Main response logic
 def get_answer(user_input):
-    global current_disease
     user_input = user_input.lower()
 
     # Greeting
@@ -92,14 +89,11 @@ def get_answer(user_input):
     if not identified_disease:
         identified_disease = find_disease_by_symptom(user_input)
 
-    # Update current disease
-    if identified_disease:
-        current_disease = identified_disease
-
-    if not current_disease:
+    # No disease identified
+    if not identified_disease:
         return "Please provide a disease name or describe the symptoms."
 
-    disease_info = data.get(current_disease, {})
+    disease_info = data.get(identified_disease, {})
 
     # Handle specific info requests
     if "symptom" in user_input:
@@ -133,7 +127,7 @@ def get_answer(user_input):
         return "\n".join(disease_info.get("safety_tips", ["No safety tips available."]))
 
     elif any(word in user_input for word in ["details", "info", "information", "about", "describe"]):
-        response = f"Information about {current_disease}:\n\n"
+        response = f"Information about {identified_disease}:\n\n"
         response += "Symptoms:\n" + "\n".join(disease_info.get("symptoms", [])) + "\n\n"
         response += "Prevention:\n" + "\n".join(disease_info.get("prevention", [])) + "\n\n"
         response += "Treatments:\n"
@@ -148,14 +142,13 @@ def get_answer(user_input):
         return response
 
     else:
-        return f"You're referring to {current_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
-
-# API endpoint
+        return f"You're referring to {identified_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
 @app.route('/chat', methods=['POST'])
 def chat():
     logging.info("Chat endpoint called")
     user_input = request.json.get('message', '')
-    response = get_answer(user_input)
+    current_context = request.json.get('context', '')
+    response = get_answer(user_input, context=current_context)
     return jsonify({"response": response})
 
 # Preprocess image
