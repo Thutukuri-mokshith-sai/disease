@@ -12,7 +12,7 @@ import logging
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable CORS for cross-origin requests
+CORS(app)
 
 # Download necessary NLTK data
 nltk.download('punkt')
@@ -27,11 +27,7 @@ with open('disease.json', 'r') as f:
 # Extract all disease names
 disease_keys = list(data.keys())
 
-# Initialize Flask app
-app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
-
-# Greetings
+# Greetings set
 greetings = {"hi", "hello", "hey", "greetings", "good morning", "good evening", "howdy"}
 
 # Global state
@@ -41,6 +37,18 @@ current_disease = None
 def find_best_match(user_input, keys):
     matches = get_close_matches(user_input, keys, n=1, cutoff=0.4)
     return matches[0] if matches else None
+def get_diseases_by_crop(crop_name):
+    crop_name = crop_name.lower()
+    matched_diseases = [disease for disease in disease_keys if disease.lower().startswith(crop_name)]
+    if matched_diseases:
+        response = f"Here are the diseases found in {crop_name.capitalize()}:\n"
+        response += "\n".join(matched_diseases)
+        response += "\n\nYou can ask for more info about any specific disease."
+    else:
+        response = f"No diseases found for the crop '{crop_name}'. Please check the name or ask about another crop."
+    return response
+
+# Find disease by symptoms
 def find_disease_by_symptom(user_input):
     user_tokens = set(nltk.word_tokenize(user_input.lower()))
     max_overlap = 0
@@ -56,7 +64,7 @@ def find_disease_by_symptom(user_input):
 
     return best_match if max_overlap > 0 else None
 
-
+# Chat logic
 def get_answer(user_input):
     global current_disease
     user_input = user_input.lower()
@@ -65,38 +73,30 @@ def get_answer(user_input):
     if any(greet in user_input for greet in greetings):
         return "Welcome! How can I assist you with crop diseases?"
 
-    # Build a crop-to-disease map from disease keys
+    # Build a crop-to-disease map
     crop_to_diseases = {}
     for disease_name in disease_keys:
         crop_name = disease_name.split()[0].lower()
         crop_to_diseases.setdefault(crop_name, []).append(disease_name)
-
-    # Check if user asked about diseases of a crop
+# Check if user asked about diseases of a crop (e.g. "tomato diseases")
     if "disease" in user_input or "diseases" in user_input:
-        for crop, diseases in crop_to_diseases.items():
+        for crop in set([d.split()[0].lower() for d in disease_keys]):
             if crop in user_input:
-                response = f"Diseases found in {crop.capitalize()}:\n"
-                response += "\n".join(diseases)
-                response += "\n\nYou can ask about any of these to know more."
-                return response
+                return get_diseases_by_crop(crop)
 
-    # Try direct disease match
+    # Identify the disease
     identified_disease = find_best_match(user_input, disease_keys)
-
-    # Try symptom-based match if not found
     if not identified_disease:
         identified_disease = find_disease_by_symptom(user_input)
 
-    # Update current disease
     if identified_disease:
         current_disease = identified_disease
-
-    if not current_disease:
+    elif not current_disease:
         return "Please provide a disease name or describe the symptoms."
 
     disease_info = data.get(current_disease, {})
 
-    # Info extraction
+    # Respond based on user's intent
     if "symptom" in user_input:
         return "\n".join(disease_info.get("symptoms", ["No symptom data available."]))
 
@@ -135,10 +135,10 @@ def get_answer(user_input):
 
     else:
         return f"You're referring to {current_disease}. What would you like to know? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
-# API endpoint
+
+# Chat endpoint
 @app.route('/chat', methods=['POST'])
 def chat():
-    print("chat")
     user_input = request.json.get('message', '')
     response = get_answer(user_input)
     return jsonify({"response": response})
@@ -151,13 +151,12 @@ def preprocess_image(img_data, target_size=(224, 224)):
     img_array = np.expand_dims(img_array, axis=0)
     return img_array
 
-# Prediction function
+# TFLite prediction
 def predict_with_tflite(img_data,
                         tflite_model_path="disease_model.tflite",
                         label_map_path="label_map.json",
                         disease_info_path="disease.json"):
 
-    # Load label map and disease information
     with open(label_map_path, 'r') as f:
         label_map = json.load(f)
         inv_map = {v: k for k, v in label_map.items()}
@@ -165,40 +164,34 @@ def predict_with_tflite(img_data,
     with open(disease_info_path, 'r') as f:
         disease_info = json.load(f)
 
-    # Preprocess image
     img_array = preprocess_image(img_data)
 
-    # Load the TensorFlow Lite model
     interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
     interpreter.allocate_tensors()
 
     input_details = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
 
-    # Set tensor for prediction
     interpreter.set_tensor(input_details[0]['index'], img_array.astype(np.float32))
     interpreter.invoke()
 
-    # Get the result
     output_data = interpreter.get_tensor(output_details[0]['index'])
     predicted_index = np.argmax(output_data)
     confidence = output_data[0][predicted_index]
 
-    # Get label and confidence
     predicted_label = inv_map[predicted_index]
     result = {
         "label": predicted_label,
         "confidence": confidence * 100
     }
 
-    # Add disease details to response
     if predicted_label in disease_info:
         info = disease_info[predicted_label]
         result["disease_details"] = info
 
     return result
 
-# API Route to predict disease
+# Predict endpoint
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'image' not in request.files:
@@ -208,12 +201,11 @@ def predict():
     img_data = image_file.read()
 
     try:
-        # Get the prediction result
         result = predict_with_tflite(img_data)
         return jsonify(result), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# Run the Flask app
+# Run Flask
 if __name__ == '__main__':
     app.run(debug=True)
