@@ -10,7 +10,6 @@ import spacy
 from difflib import get_close_matches
 import logging
 from werkzeug.exceptions import BadRequest
-
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
@@ -31,7 +30,6 @@ except FileNotFoundError:
 except json.JSONDecodeError:
     print("Error: Failed to decode 'disease.json'. Please check the file format.")
     data = {}
-
 # Extract all disease names and create a map of disease names to full keys (e.g., "Apple Apple scab")
 disease_keys = list(data.keys())
 disease_names_map = {}
@@ -69,8 +67,8 @@ current_disease = None
 current_crop = None
 
 # Utility: best match for disease name using fuzzy matching
-def find_best_match(user_input, keys, cutoff=0.4):
-    matches = get_close_matches(user_input, keys, n=1, cutoff=cutoff)
+def find_best_match(user_input, keys):
+    matches = get_close_matches(user_input, keys, n=1, cutoff=0.4)
     return matches[0] if matches else None
 
 # Get diseases by crop
@@ -101,7 +99,6 @@ def find_disease(user_input):
         return disease_names_map[match]  # return the full key like "Apple Apple scab"
 
     return None
-
 def get_answer(user_input):
     global current_disease, current_crop
     user_input = user_input.lower()
@@ -115,10 +112,8 @@ def get_answer(user_input):
     if "disease" in user_input or "diseases" in user_input:
         for crop in diseases_of_crops:
             if crop.lower() in user_input:
-                # Reset disease when crop changes
-                if current_crop != crop.lower():
-                    current_crop = crop.lower()
-                    current_disease = None  # reset disease when crop changes
+                current_crop = crop.lower()
+                current_disease = None  # reset disease when crop changes
                 return get_diseases_by_crop(crop)
 
     # Try to identify disease name only if none is selected yet
@@ -187,9 +182,7 @@ def chat():
     except BadRequest as e:
         return jsonify({"error": str(e)}), 400
     except Exception as e:
-        return jsonify({"error": "An error occurred: " + str(e)}), 500
-
-# Preprocess image
+        return jsonify({"error": "An error occurred: " + str(e)}), 500# Preprocess image
 def preprocess_image(img_data, target_size=(224, 224)):
     img = Image.open(io.BytesIO(img_data))
     img = img.resize(target_size)
@@ -232,16 +225,26 @@ def predict_with_tflite(img_data,
     }
 
     if predicted_label in disease_info:
-        disease_data = disease_info[predicted_label]
-        result.update({
-            "symptoms": disease_data.get("symptoms", []),
-            "treatments": disease_data.get("treatments", []),
-            "pathogen": disease_data.get("pathogen", "Unknown"),
-            "prevention": disease_data.get("prevention", []),
-            "organic_alternatives": disease_data.get("organic_alternatives", [])
-        })
+        info = disease_info[predicted_label]
+        result["disease_details"] = info
 
     return result
 
+# Predict endpoint
+@app.route('/predict', methods=['POST'])
+def predict():
+    if 'image' not in request.files:
+        return jsonify({"error": "No image file provided"}), 400
+
+    image_file = request.files['image']
+    img_data = image_file.read()
+
+    try:
+        result = predict_with_tflite(img_data)
+        return jsonify(result), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# Run Flask
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)  
