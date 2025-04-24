@@ -174,81 +174,7 @@ def get_answer(user_input):
 
     # If user only gave symptoms or vague text without a known disease
     return "Please provide a disease name or describe the symptoms or crop to get started."
-def get_answer(user_input):
-    global current_disease, current_crop
-    user_input = user_input.lower()
 
-    # Greeting
-    greetings = {"hi", "hello", "hey", "greetings", "good morning", "good evening", "howdy"}
-    if any(greet in user_input for greet in greetings):
-        return "Welcome! How can I assist you with crop diseases?"
-
-    # Check for crop-related queries like "tomato diseases"
-    if "disease" in user_input or "diseases" in user_input:
-        for crop in diseases_of_crops:
-            if crop.lower() in user_input:
-                current_crop = crop.lower()
-                current_disease = None  # reset disease when crop changes
-                return get_diseases_by_crop(crop)
-
-    # Check if the user mentions a new crop, reset disease accordingly
-    for crop in diseases_of_crops:
-        if crop.lower() in user_input and current_crop != crop.lower():
-            current_crop = crop.lower()
-            current_disease = None  # reset disease
-            return get_diseases_by_crop(crop)
-
-    # Try to identify disease name only if none is selected yet
-    if current_disease is None:
-        identified_disease = find_disease(user_input)
-        if identified_disease:
-            current_disease = identified_disease
-            return f"You're referring to {current_disease}. What would you like to know about it? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
-
-    # If follow-up question like "symptoms" is asked
-    if current_disease:
-        disease_info = data.get(current_disease, {})
-
-        if "symptom" in user_input:
-            return "\n".join(disease_info.get("symptoms", ["No symptom data available."]))
-
-        elif "treatment" in user_input:
-            treatments = disease_info.get("treatments", [])
-            if treatments:
-                return "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
-            return "No treatment data available."
-
-        elif "pathogen" in user_input:
-            return f"Pathogen: {disease_info.get('pathogen', 'Unknown')}"
-
-        elif "organic" in user_input:
-            organic = disease_info.get("organic_alternatives", [])
-            if organic:
-                return "\n\n".join([f"Name: {o['name']}\nDosage: {o['dosage']}\nApplication: {o['application']}" for o in organic])
-            return "No organic alternatives available."
-
-        elif "prevention" in user_input:
-            return "\n".join(disease_info.get("prevention", ["No prevention data available."]))
-
-        elif "safety" in user_input:
-            return "\n".join(disease_info.get("safety_tips", ["No safety tips available."]))
-
-        elif any(word in user_input for word in ["details", "info", "information", "about", "describe"]):
-            response = f"Information about {current_disease}:\n\n"
-            response += "Symptoms:\n" + "\n".join(disease_info.get("symptoms", [])) + "\n\n"
-            response += "Prevention:\n" + "\n".join(disease_info.get("prevention", [])) + "\n\n"
-            response += "Treatments:\n"
-            treatments = disease_info.get("treatments", [])
-            if treatments:
-                response += "\n\n".join([f"Name: {t['name']}\nDosage: {t['dosage']}\nApplication: {t['application']}" for t in treatments])
-            else:
-                response += "No treatment info available."
-            return response
-        else:
-            return f"What would you like to know about {current_disease}? (e.g., symptoms, treatments, prevention, organic alternatives, pathogen)"
-
-    # If user only gave symptoms or vague text without a known disease
-    return "Please provide a disease name or describe the symptoms or crop to get started."
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
@@ -328,4 +254,4 @@ def predict():
 
 # Run Flask
 if __name__ == '__main__':
-    app.run(debug=True)  
+    app.run(debug=True)
