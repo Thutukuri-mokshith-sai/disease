@@ -145,43 +145,43 @@ def chat():
     response = get_answer(user_input)
     return jsonify({"response": response})
 
-# Load the model and preprocessors
-model = load_model('crop_suitability_model.h5')
-scaler = joblib.load('scaler.pkl')
-le_crop = joblib.load('le_crop.pkl')
-le_suit = joblib.load('le_suit.pkl')
+# # Load the model and preprocessors
+# model = load_model('crop_suitability_model.h5')
+# scaler = joblib.load('scaler.pkl')
+# le_crop = joblib.load('le_crop.pkl')
+# le_suit = joblib.load('le_suit.pkl')
 
-# Route to handle predictions
-@app.route('/testsoil', methods=['POST', 'OPTIONS'])  # Allow OPTIONS method explicitly
-def predict():
-    if request.method == 'OPTIONS':
-        # Respond with the correct CORS headers for OPTIONS
-        return '', 200  # 200 OK with no content for preflight request
+# # Route to handle predictions
+# @app.route('/testsoil', methods=['POST', 'OPTIONS'])  # Allow OPTIONS method explicitly
+# def predict():
+#     if request.method == 'OPTIONS':
+#         # Respond with the correct CORS headers for OPTIONS
+#         return '', 200  # 200 OK with no content for preflight request
 
-    data = request.get_json()
+#     data = request.get_json()
 
-    # Extract values from the incoming JSON request
-    custom_input = np.array([[data['N'], data['P'], data['K'], data['Month'], data['Moisture'],
-                              data['Light_Intensity'], data['Temperature'], data['Humidity']]])
+#     # Extract values from the incoming JSON request
+#     custom_input = np.array([[data['N'], data['P'], data['K'], data['Month'], data['Moisture'],
+#                               data['Light_Intensity'], data['Temperature'], data['Humidity']]])
 
-    # Normalize the input
-    custom_input_scaled = scaler.transform(custom_input)
+#     # Normalize the input
+#     custom_input_scaled = scaler.transform(custom_input)
 
-    # Reshape input to match the LSTM input shape
-    custom_input_lstm = custom_input_scaled.reshape((custom_input_scaled.shape[0], 1, custom_input_scaled.shape[1]))
+#     # Reshape input to match the LSTM input shape
+#     custom_input_lstm = custom_input_scaled.reshape((custom_input_scaled.shape[0], 1, custom_input_scaled.shape[1]))
 
-    # Get predictions
-    crop_pred, suit_pred = model.predict(custom_input_lstm)
+#     # Get predictions
+#     crop_pred, suit_pred = model.predict(custom_input_lstm)
 
-    # Decode the predictions
-    predicted_crop = le_crop.inverse_transform(np.argmax(crop_pred, axis=1))
-    predicted_suitability = le_suit.inverse_transform(np.argmax(suit_pred, axis=1))
+#     # Decode the predictions
+#     predicted_crop = le_crop.inverse_transform(np.argmax(crop_pred, axis=1))
+#     predicted_suitability = le_suit.inverse_transform(np.argmax(suit_pred, axis=1))
 
-    # Return the predictions as JSON
-    return jsonify({
-        'predicted_crop': predicted_crop[0],
-        'predicted_suitability': predicted_suitability[0]
-    })
+#     # Return the predictions as JSON
+#     return jsonify({
+#         'predicted_crop': predicted_crop[0],
+#         'predicted_suitability': predicted_suitability[0]
+#     })
 
 def preprocess_image(img_data, target_size=(224, 224)):
     img = Image.open(io.BytesIO(img_data))
