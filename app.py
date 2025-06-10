@@ -244,7 +244,9 @@ def predict():
         return jsonify(result), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
+@app.route('/sample', methods=['GET'])
+def sample():
+    return jsonify({"message": "hello"}), 200
 # Run Flask
 if __name__ == '__main__':
     app.run(debug=True)
